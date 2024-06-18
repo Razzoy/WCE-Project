@@ -1,3 +1,45 @@
-h1{
-    font-size: 40;
+@use "./helpers/_placeholders";
+@use "./helpers/_variables" as var;
+@use "./helpers/_mixins" as mx;
+
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+body{
+    @extend %noMarPad;
+}
+
+hgroup{
+    nav{
+        background-color: var.$secondaryColor;
+        @include mx.flexing(row, 1rem);
+        justify-content: center;
+        ul{
+            @include mx.flexing(row, 1rem);
+            li{
+                list-style: none;
+                text-transform: uppercase;
+                @include mx.pageFont(400, normal, var.$secondaryFont);
+                a{
+                    text-decoration: none;
+                    @include mx.pageFont(400, normal, var.$secondaryFont);
+                    &:hover{
+                        color: var.$infoFont;
+                    }
+                }
+            }
+        }
+    }
+
+    span{
+        padding: 5vw;
+        background-color: var.$primaryColor;
+        border: 2px solid var.$primaryFont;
+        border-radius: 50%;
+    }
+    #circle1{
+
+    }
+    #circle2{
+
+    }
 }

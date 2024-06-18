@@ -1,0 +1,18 @@
+@mixin pageFont($weight, $style, $color){
+    font-family: "Ubuntu Mono", monospace;
+    font-weight: $weight;
+    font-style: $style;
+    color: $color;
+}
+
+@mixin flexing($direction, $gap){
+    display: flex;
+    flex-direction: $direction;
+    gap: $gap;
+}
+
+@mixin gridable($column, $fraction, $gap) {
+    display: grid;
+    grid-template-columns: repeat($column, $fraction);
+    gap: $gap;
+}
