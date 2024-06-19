@@ -56,17 +56,19 @@ hgroup {
     article {
         @include mx.flexing(column, 0);
         align-items: center;
-        
+
         h3 {
             @include mx.pageFont(400, normal, var.$primaryFont);
             @extend %noMarPad;
             margin-bottom: 3rem;
             font-size: 36px;
         }
+
         p {
             font-size: 20px;
             @extend %noMarPad;
         }
+
         input {
             @include mx.sectionColoring(var.$secondaryColor, var.$secondaryFont);
             @include mx.pageFont(400, normal, var.$secondaryFont);
@@ -76,17 +78,18 @@ hgroup {
             margin-top: 4rem;
             width: 40rem;
             padding: 1rem 2rem;
+
             &::placeholder {
                 font-size: 20px;
                 color: var.$primaryColor;
             }
         }
-    
+
         textarea:focus,
         input:focus {
             outline: none;
         }
-    
+
         button {
             @include mx.sectionColoring(var.$secondaryColor, var.$secondaryFont);
             @include mx.pageFont(400, normal, var.$secondaryFont);
@@ -99,5 +102,46 @@ hgroup {
 
     }
 
-    
+
+}
+
+#sectionResource {
+    @include mx.pageFont(400, normal, var.$secondaryFont);
+    @include mx.sectionColoring(var.$secondaryColor, var.$secondaryFont );
+    @include mx.flexing(column, 1rem);
+    justify-content: center;
+    height: 940px;
+
+    article {
+        @include mx.flexing(column, 4rem);
+        padding-left: 15rem;
+        h2{
+            @extend %noMarPad;
+            @include mx.pageFont(400, normal, var.$secondaryFont);
+            font-size: 64px;
+        }
+        p{
+            font-size: 20px;
+            width: 25%;
+        }
+        ul{
+            @extend %noMarPad;
+            margin-left: 1rem;
+            @include mx.flexing(column, 1.5rem);
+            li{
+                &:hover{
+                    color: var.$infoFont;
+                }
+                a{
+                    font-size: 20px;
+                    color: var.$secondaryFont;
+                    &:hover{
+                        color: var.$infoFont;
+                    }
+                }
+                
+            }
+        }
+    }
+
 }
