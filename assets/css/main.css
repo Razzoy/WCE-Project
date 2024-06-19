@@ -1,20 +1,46 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-body {
+body, hgroup header div h1 {
   margin: 0;
   padding: 0;
 }
 
+hgroup {
+  background-color: #40A578;
+}
+hgroup header {
+  width: 100%;
+  height: 1058px;
+  position: relative;
+}
+hgroup header div {
+  display: flex;
+  flex-direction: column;
+  color: #E6FF94;
+  position: absolute;
+  top: 276px;
+  left: 186px;
+}
+hgroup header div h1 {
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  color: #E6FF94;
+  font-size: 128px;
+}
 hgroup nav {
   background-color: #A5DD9B;
   display: flex;
   flex-direction: row;
   gap: 1rem;
   justify-content: center;
+  height: 80px;
+  width: 100%;
 }
 hgroup nav ul {
   display: flex;
   flex-direction: row;
   gap: 1rem;
+  align-items: center;
 }
 hgroup nav ul li {
   list-style: none;
@@ -39,4 +65,9 @@ hgroup span {
   background-color: #40A578;
   border: 2px solid #E6FF94;
   border-radius: 50%;
+}
+hgroup span #circle1 {
+  position: absolute;
+  width: 760px;
+  height: 760px;
 }/*# sourceMappingURL=main.css.map */
