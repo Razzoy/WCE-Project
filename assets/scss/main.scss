@@ -52,6 +52,7 @@ hgroup{
         background-color: var.$secondaryColor;
         @include mx.flexing(row, 1rem);
         justify-content: center;
+
         height: 80px;
         width: 100%;
 
@@ -87,10 +88,10 @@ hgroup{
             height: 760px;
         }
     }
-
     
     #circle2 {}
 }
+
 #sectionCheck {
     @include mx.pageFont(400, normal, var.$primaryFont);
     @include mx.sectionColoring(var.$primaryColor, var.$primaryFont);
