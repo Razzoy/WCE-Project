@@ -8,9 +8,9 @@ body, #sectionCheck article h3, #sectionCheck article p  {
     @extend %noMarPad;
 }
 
-hgroup {
+hgroup{
     background-color: var.$primaryColor;
-    header {
+    header{
         display: flex;
         width: 100%;
         height: 1058px;
