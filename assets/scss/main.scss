@@ -4,25 +4,29 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
-body{
+body {
     @extend %noMarPad;
 }
 
-hgroup{
-    nav{
+hgroup {
+    nav {
         background-color: var.$secondaryColor;
         @include mx.flexing(row, 1rem);
         justify-content: center;
-        ul{
+
+        ul {
             @include mx.flexing(row, 1rem);
-            li{
+
+            li {
                 list-style: none;
                 text-transform: uppercase;
                 @include mx.pageFont(400, normal, var.$secondaryFont);
-                a{
+
+                a {
                     text-decoration: none;
                     @include mx.pageFont(400, normal, var.$secondaryFont);
-                    &:hover{
+
+                    &:hover {
                         color: var.$infoFont;
                     }
                 }
@@ -30,16 +34,70 @@ hgroup{
         }
     }
 
-    span{
+    span {
         padding: 5vw;
         background-color: var.$primaryColor;
         border: 2px solid var.$primaryFont;
         border-radius: 50%;
     }
-    #circle1{
+
+    #circle1 {}
+
+    #circle2 {}
+}
+
+#sectionCheck {
+    @include mx.pageFont(400, normal, var.$primaryFont);
+    @include mx.sectionColoring(var.$primaryColor, var.$primaryFont);
+    @include mx.flexing(column, 1rem);
+    justify-content: center;
+    height: 1440px;
+
+    article {
+        @include mx.flexing(column, 0);
+        align-items: center;
+        
+        h3 {
+            @include mx.pageFont(400, normal, var.$primaryFont);
+            @extend %noMarPad;
+            margin-bottom: 3rem;
+            font-size: 36px;
+        }
+        p {
+            font-size: 20px;
+            @extend %noMarPad;
+        }
+        input {
+            @include mx.sectionColoring(var.$secondaryColor, var.$secondaryFont);
+            @include mx.pageFont(400, normal, var.$secondaryFont);
+            border: none;
+            border-radius: 2rem;
+            font-size: 20px;
+            margin-top: 4rem;
+            width: 40rem;
+            padding: 1rem 2rem;
+            &::placeholder {
+                font-size: 20px;
+                color: var.$primaryColor;
+            }
+        }
+    
+        textarea:focus,
+        input:focus {
+            outline: none;
+        }
+    
+        button {
+            @include mx.sectionColoring(var.$secondaryColor, var.$secondaryFont);
+            @include mx.pageFont(400, normal, var.$secondaryFont);
+            margin-top: 2rem;
+            border: none;
+            border-radius: 2rem;
+            width: 12rem;
+            padding: 0.5rem 2rem;
+        }
 
     }
-    #circle2{
 
-    }
+    
 }
