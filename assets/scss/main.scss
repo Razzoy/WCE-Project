@@ -147,3 +147,26 @@ hgroup{
 
     
 }
+#sectionMission{
+    @include mx.pageFont(400, normal, var.$primaryFont);
+    @include mx.sectionColoring(var.$primaryColor, var.$secondaryFont );
+    @include mx.flexing(column, 1rem);
+    justify-content: center;
+    height: 940px;
+
+    article {
+        @include mx.flexing(column, 4rem);
+        padding-left: 15rem;
+        h2{
+            @extend %noMarPad;
+            @include mx.pageFont(400, normal, var.$primaryFont);
+            font-size: 64px;
+        }
+        p{
+            font-size: 20px;
+            width: 25%;
+            color: var.$infoFont;
+        }
+    }
+
+}
