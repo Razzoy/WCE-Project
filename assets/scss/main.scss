@@ -91,6 +91,68 @@ hgroup{
     
     #circle2 {}
 }
+#sectionCalc {
+    @include mx.pageFont(400, normal, var.$primaryFont);
+    @include mx.sectionColoring(var.$secondaryColor, var.$primaryFont);
+    @include mx.flexing(column, 1rem);
+    justify-content: center;
+    height: 1440px;
+
+    article {
+        @include mx.flexing(column, 0);
+        align-items: center;
+        
+        h3 {
+            @include mx.pageFont(400, normal, var.$primaryColor);
+            @extend %noMarPad;
+            margin-bottom: 3rem;
+            font-size: 48px;
+        }
+        h4{
+            @include mx.pageFont(400, normal, var.$secondaryFont);
+            @extend %noMarPad;
+            margin-bottom: 3rem;
+            font-size: 36px;
+        }
+        p {
+            font-size: 20px;
+            @extend %noMarPad;
+            @include mx.pageFont(400, normal, var.$secondaryFont);
+        }
+        input {
+            @include mx.sectionColoring(var.$primaryColor, var.$secondaryColor);
+            @include mx.pageFont(400, normal, var.$infoFont);
+            border: none;
+            border-radius: 2rem;
+            font-size: 20px;
+            margin-top: 4rem;
+            width: 40rem;
+            padding: 1rem 2rem;
+            &::placeholder {
+                font-size: 20px;
+                color: var.$infoFont;
+            }
+        }
+    
+        textarea:focus,
+        input:focus {
+            outline: none;
+        }
+    
+        button {
+            @include mx.sectionColoring(var.$primaryColor, var.$secondaryFont);
+            @include mx.pageFont(400, normal, var.$infoFont);
+            margin-top: 2rem;
+            border: none;
+            border-radius: 2rem;
+            width: 12rem;
+            padding: 0.5rem 2rem;
+        }
+
+    }
+
+    
+}
 
 #sectionCheck {
     @include mx.pageFont(400, normal, var.$primaryFont);
