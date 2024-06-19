@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-body {
+body, #sectionCheck article h3, #sectionCheck article p {
   margin: 0;
   padding: 0;
 }
@@ -39,4 +39,73 @@ hgroup span {
   background-color: #40A578;
   border: 2px solid #E6FF94;
   border-radius: 50%;
+}
+#sectionCheck {
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  color: #E6FF94;
+  background-color: #40A578;
+  color: #E6FF94;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  height: 1440px;
+}
+#sectionCheck article {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  align-items: center;
+}
+#sectionCheck article h3 {
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  color: #E6FF94;
+  margin-bottom: 3rem;
+  font-size: 36px;
+}
+#sectionCheck article p {
+  font-size: 20px;
+}
+#sectionCheck article input {
+  background-color: #A5DD9B;
+  color: #006769;
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  color: #006769;
+  border: none;
+  border-radius: 2rem;
+  font-size: 20px;
+  margin-top: 4rem;
+  width: 40rem;
+  padding: 1rem 2rem;
+}
+#sectionCheck article input::-moz-placeholder {
+  font-size: 20px;
+  color: #40A578;
+}
+#sectionCheck article input::placeholder {
+  font-size: 20px;
+  color: #40A578;
+}
+#sectionCheck article textarea:focus,
+#sectionCheck article input:focus {
+  outline: none;
+}
+#sectionCheck article button {
+  background-color: #A5DD9B;
+  color: #006769;
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  color: #006769;
+  margin-top: 2rem;
+  border: none;
+  border-radius: 2rem;
+  width: 12rem;
+  padding: 0.5rem 2rem;
 }/*# sourceMappingURL=main.css.map */
