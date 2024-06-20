@@ -47,95 +47,56 @@ hgroup {
         }
     }
 
-
-    span {
-        padding: 5vw;
-        background-color: var.$primaryColor;
-        border: 5px solid var.$primaryFont;
-        border-radius: 50%;
-    }
-
-    #circle1 {
-        position: absolute;
-        width: 650px;
-        height: 650px;
-        top: 300px;
-        left: 300px;
-    }
-
-    #circle2 {
-        display: flex;
-        justify-content: center;
-        height: 1390px;
-        position: relative;
-        z-index: 1;
-    }
-
     header {
-        display: flex;
-        justify-content: center;
-        height: 1390px;
+        height: 940px;
         position: relative;
         z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
 
         .hero-container {
             display: flex;
             justify-content: center;
-            width: 1600px;
-
-            .header-text {
-                display: flex;
-                flex-direction: column;
-                color: var.$primaryFont;
-                position: absolute;
-                top: 250px;
-                left: 250px;
-                height: 500px;
-                width: 592px;
-                z-index: 5;
-
-                h1 {
-                    @include mx.pageFont(400, normal, var.$primaryFont);
-                    font-size: 120px;
-                    @extend %noMarPad;
-                }
-            }
+            align-items: center;
 
             span {
                 background-color: var.$primaryColor;
-                border: 5px solid var.$primaryFont;
+                border: 4px solid var.$primaryFont;
                 border-radius: 50%;
-
             }
 
             #circle1 {
-                display: flex;
-                justify-content: center;
-                position: absolute;
+                position: relative;
                 width: 680px;
                 height: 680px;
-                top: 300px;
-                // left: 350px;
-            }
 
-            #circle2 {
-                display: flex;
-                position: absolute;
-                justify-content: center;
-                width: 300px;
-                height: 300px;
-                top: 680px;
-                left: 850px;
+                h1 {
+                    @include mx.pageFont(400, normal, var.$primaryFont);
+                    @extend %noMarPad;
+                    font-size: 110px;
+                    color: var.$primaryFont;
+                    position: absolute;
+                    left: -20%;
+                    top: -6%;
+                    z-index: 5;
+                }
 
-                .header-subtext {
+                #circle2 {
                     display: flex;
                     justify-content: center;
-                    flex-direction: column;
+                    align-items: center;
+                    position: absolute;
+                    right: -10%;
+                    bottom: 0%;
                     text-transform: uppercase;
+                    width: 250px;
+                    height: 250px;
 
                     h4 {
                         @include mx.pageFont(400, normal, var.$primaryFont);
-                        font-size: 24px;
+                        font-size: 22px;
                         @extend %noMarPad;
                         text-align: center;
                     }
