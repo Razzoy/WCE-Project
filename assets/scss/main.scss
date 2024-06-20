@@ -11,38 +11,12 @@ body,
 #sectionCheck article h3,
 #sectionCheck article p {
     @extend %noMarPad;
+    overflow-x: hidden;
 }
 
 hgroup {
     background-color: var.$primaryColor;
 
-    header {
-        display: flex;
-        width: 100%;
-        height: 1390px;
-        position: relative;
-        z-index: 1;
-
-        .header-text {
-            display: flex;
-            flex-direction: column;
-            color: var.$primaryFont;
-            position: absolute;
-            top: 230px;
-            left: 190px;
-            height: 500px;
-            width: 592px;
-            z-index: 5;
-
-            h1 {
-                @include mx.pageFont(400, normal, var.$primaryFont);
-                font-size: 120px;
-                @extend %noMarPad;
-            }
-        }
-
-
-    }
 
     nav {
         background-color: var.$secondaryColor;
@@ -72,6 +46,7 @@ hgroup {
         }
     }
 
+
     span {
         padding: 5vw;
         background-color: var.$primaryColor;
@@ -89,27 +64,87 @@ hgroup {
 
     #circle2 {
         display: flex;
-        position: absolute;
         justify-content: center;
-        width: 200px;
-        height: 200px;
-        top: 750px;
-        left: 890px;
+        height: 1390px;
+        position: relative;
+        z-index: 1;
 
-        .header-subtext {
+        .hero-container {
+            // position: relative;
             display: flex;
             justify-content: center;
-            flex-direction: column;
-            text-transform: uppercase;
+            width: 1600px;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
 
-            h4 {
-                @include mx.pageFont(400, normal, var.$primaryFont);
-                font-size: 24px;
-                @extend %noMarPad;
-                text-align: center;
+            .header-text {
+                display: flex;
+                flex-direction: column;
+                color: var.$primaryFont;
+                position: absolute;
+                top: 250px;
+                left: 250px;
+                height: 500px;
+                width: 592px;
+                z-index: 5;
+
+                h1 {
+                    @include mx.pageFont(400, normal, var.$primaryFont);
+                    font-size: 120px;
+                    @extend %noMarPad;
+                }
+            }
+
+
+
+
+            span {
+                background-color: var.$primaryColor;
+                border: 5px solid var.$primaryFont;
+                border-radius: 50%;
+
+            }
+
+            #circle1 {
+                display: flex;
+                justify-content: center;
+                position: absolute;
+                width: 680px;
+                height: 680px;
+                top: 300px;
+                // left: 350px;
+            }
+
+            #circle2 {
+                display: flex;
+                position: absolute;
+                justify-content: center;
+                width: 300px;
+                height: 300px;
+                top: 680px;
+                left: 850px;
+
+                .header-subtext {
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    text-transform: uppercase;
+
+                    h4 {
+                        @include mx.pageFont(400, normal, var.$primaryFont);
+                        font-size: 24px;
+                        @extend %noMarPad;
+                        text-align: center;
+                    }
+                }
             }
         }
     }
+
+
+
 
 }
 
@@ -326,7 +361,20 @@ hgroup {
         }
     }
 
-}
+
+        #resourceCircle {
+            background-color: var.$secondaryColor;
+            border: 5px solid var.$primaryColor;
+            border-radius: 50%;
+            position: absolute;
+            top: 120px;
+            left: 60%;
+            width: 1000px;
+            height: 1000px;
+            overflow: hidden;
+        }
+    }
+
 
 #sectionMission {
     @include mx.pageFont(400, normal, var.$primaryFont);
@@ -362,6 +410,29 @@ hgroup {
             width: 520px;
             color: var.$infoFont;
         }
+    }
+
+    #missionCircle1{
+        background-color: var.$primaryColor;
+        border: 5px solid var.$primaryFont;
+        border-radius: 50%;
+        position: absolute;
+        top: 120px;
+        left: 70%;
+        width: 700px;
+        height: 700px;
+        overflow: hidden;
+    }
+    #missionCircle2{
+        background-color: var.$primaryColor;
+        border: 5px solid var.$primaryFont;
+        border-radius: 50%;
+        position: absolute;
+        top: 500px;
+        left: 60%;
+        width: 300px;
+        height: 300px;
+        overflow: hidden;
     }
 
 }
