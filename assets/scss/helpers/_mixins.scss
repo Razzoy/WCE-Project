@@ -21,3 +21,13 @@
     background-color: $background;
     color: $color;
 }
+
+@mixin sectionCircle($background, $border){
+    background-color: $background;
+    border: $border;
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    position: absolute;
+    left: 5%;
+}

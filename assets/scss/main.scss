@@ -117,6 +117,17 @@ hgroup {
     @include mx.flexing(column, 1rem);
     justify-content: center;
     height: 1440px;
+    position: relative;
+    span{
+        @include mx.sectionCircle(var.$secondaryColor, 7px solid var.$primaryColor);
+        @include mx.flexing(column, 0);
+        @extend %flexAbsoluteCenter;
+        top: -8.8%;
+        h2{
+            @include mx.pageFont(400, normal, var.$secondaryFont);
+            font-size: 24px;
+        }
+    }
 
     article {
         @include mx.flexing(column, 0);
@@ -184,6 +195,17 @@ hgroup {
     @include mx.flexing(column, 1rem);
     justify-content: center;
     height: 1440px;
+    position: relative;
+    span{
+        @include mx.sectionCircle(var.$primaryColor, 7px solid var.$secondaryColor);
+        @include mx.flexing(column, 0);
+        @extend %flexAbsoluteCenter;
+        top: -8.8%;
+        h2{
+            @include mx.pageFont(400, normal, var.$secondaryColor);
+            font-size: 24px;
+        }
+    }
 
     article {
         @include mx.flexing(column, 0);
@@ -241,7 +263,18 @@ hgroup {
     @include mx.flexing(column, 1rem);
     justify-content: center;
     height: 940px;
-
+    position: relative;
+    span{
+        @include mx.sectionCircle(var.$secondaryColor, 7px solid var.$primaryColor);
+        @include mx.flexing(column, 0);
+        @extend %flexAbsoluteCenter;
+        top: -13.6%;
+        h2{
+            @include mx.pageFont(400, normal, var.$secondaryFont);
+            font-size: 24px;
+        }
+    }
+    
     article {
         @include mx.flexing(column, 4rem);
         padding-left: 15rem;
@@ -282,14 +315,23 @@ hgroup {
 
 }
 
-
-
 #sectionMission {
     @include mx.pageFont(400, normal, var.$primaryFont);
     @include mx.sectionColoring(var.$primaryColor, var.$secondaryFont );
     @include mx.flexing(column, 1rem);
     justify-content: center;
     height: 940px;
+    position: relative;
+    span{
+        @include mx.sectionCircle(var.$primaryColor, 7px solid var.$secondaryColor);
+        @include mx.flexing(column, 0);
+        @extend %flexAbsoluteCenter;
+        top: -13.6%;
+        h2{
+            @include mx.pageFont(400, normal, var.$secondaryColor);
+            font-size: 24px;
+        }
+    }
 
     article {
         @include mx.flexing(column, 4rem);

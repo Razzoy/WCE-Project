@@ -9,6 +9,11 @@ body,
   padding: 0;
 }
 
+#sectionCalc span, #sectionCheck span, #sectionResource span, #sectionMission span {
+  justify-content: center;
+  align-items: center;
+}
+
 hgroup {
   background-color: #40A578;
 }
@@ -119,6 +124,27 @@ hgroup #circle2 .header-subtext h4 {
   gap: 1rem;
   justify-content: center;
   height: 1440px;
+  position: relative;
+}
+#sectionCalc span {
+  background-color: #A5DD9B;
+  border: 7px solid #40A578;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  position: absolute;
+  left: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  top: -8.8%;
+}
+#sectionCalc span h2 {
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  color: #006769;
+  font-size: 24px;
 }
 #sectionCalc article {
   display: flex;
@@ -201,6 +227,27 @@ hgroup #circle2 .header-subtext h4 {
   gap: 1rem;
   justify-content: center;
   height: 1440px;
+  position: relative;
+}
+#sectionCheck span {
+  background-color: #40A578;
+  border: 7px solid #A5DD9B;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  position: absolute;
+  left: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  top: -8.8%;
+}
+#sectionCheck span h2 {
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  color: #A5DD9B;
+  font-size: 24px;
 }
 #sectionCheck article {
   display: flex;
@@ -271,6 +318,27 @@ hgroup #circle2 .header-subtext h4 {
   gap: 1rem;
   justify-content: center;
   height: 940px;
+  position: relative;
+}
+#sectionResource span {
+  background-color: #A5DD9B;
+  border: 7px solid #40A578;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  position: absolute;
+  left: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  top: -13.6%;
+}
+#sectionResource span h2 {
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  color: #006769;
+  font-size: 24px;
 }
 #sectionResource article {
   display: flex;
@@ -318,6 +386,27 @@ hgroup #circle2 .header-subtext h4 {
   gap: 1rem;
   justify-content: center;
   height: 940px;
+  position: relative;
+}
+#sectionMission span {
+  background-color: #40A578;
+  border: 7px solid #A5DD9B;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  position: absolute;
+  left: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  top: -13.6%;
+}
+#sectionMission span h2 {
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  color: #A5DD9B;
+  font-size: 24px;
 }
 #sectionMission article {
   display: flex;
