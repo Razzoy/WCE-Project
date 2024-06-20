@@ -51,6 +51,8 @@ hgroup {
 
         .hero-container {
             position: relative;
+            display: flex;
+            justify-content: center;
             width: 1600px;
             top: 0;
             bottom: 0;
@@ -79,7 +81,6 @@ hgroup {
 
 
             span {
-                padding: 5vw;
                 background-color: var.$primaryColor;
                 border: 5px solid var.$primaryFont;
                 border-radius: 50%;
@@ -298,6 +299,7 @@ hgroup {
     article {
         @include mx.flexing(column, 4rem);
         padding-left: 15rem;
+        position: relative;
 
         h2 {
             @extend %noMarPad;
@@ -333,7 +335,19 @@ hgroup {
         }
     }
 
-}
+        
+
+        // #resourceCircle {
+        //     background-color: var.$primaryColor;
+        //     border: 5px solid var.$primaryFont;
+        //     border-radius: 50%;
+        //     position: absolute;
+        //     left: 50%;
+        //     width: 590px;
+        //     height: 590px
+        // }
+    }
+
 
 #sectionMission {
     @include mx.pageFont(400, normal, var.$primaryFont);

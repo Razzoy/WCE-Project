@@ -59,6 +59,8 @@ hgroup header {
 }
 hgroup header .hero-container {
   position: relative;
+  display: flex;
+  justify-content: center;
   width: 1600px;
   top: 0;
   bottom: 0;
@@ -84,7 +86,6 @@ hgroup header .hero-container .header-text h1 {
   font-size: 120px;
 }
 hgroup header .hero-container span {
-  padding: 5vw;
   background-color: #40A578;
   border: 5px solid #E6FF94;
   border-radius: 50%;
@@ -353,6 +354,7 @@ hgroup header .hero-container #circle2 .header-subtext h4 {
   flex-direction: column;
   gap: 4rem;
   padding-left: 15rem;
+  position: relative;
 }
 #sectionResource article h2 {
   font-family: "Ubuntu Mono", monospace;
