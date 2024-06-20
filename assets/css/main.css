@@ -453,6 +453,28 @@ hgroup header .hero-container #circle2 .header-subtext h4 {
   width: 25%;
   color: #FFF;
 }
+#sectionMission #missionCircle1 {
+  background-color: #40A578;
+  border: 5px solid #E6FF94;
+  border-radius: 50%;
+  position: absolute;
+  top: 120px;
+  left: 70%;
+  width: 700px;
+  height: 700px;
+  overflow: hidden;
+}
+#sectionMission #missionCircle2 {
+  background-color: #40A578;
+  border: 5px solid #E6FF94;
+  border-radius: 50%;
+  position: absolute;
+  top: 500px;
+  left: 60%;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+}
 
 .container-footer {
   background-color: #40A578;
