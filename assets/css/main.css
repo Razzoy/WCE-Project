@@ -14,6 +14,17 @@ body,
   align-items: center;
 }
 
+@media only screen and (max-width: 600px) {
+  body #sectionCheck article input {
+    width: auto;
+  }
+  body #sectionCalc article input {
+    width: auto;
+  }
+  body #footerInfo ul:nth-child(-n+2) {
+    display: none;
+  }
+}
 html {
   scroll-behavior: smooth;
 }
