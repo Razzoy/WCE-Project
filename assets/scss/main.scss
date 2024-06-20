@@ -13,516 +13,518 @@ body,
 #sectionCheck article h3,
 #sectionCheck article p {
     @extend %noMarPad;
-    // overflow-x: hidden;
+    overflow-x: hidden;
 }
-.container-main{
+
+.container-main {
     width: 100%;
-hgroup {
-    background-color: var.$primaryColor;
+
+    hgroup {
+        background-color: var.$primaryColor;
 
 
-    nav {
-        background-color: var.$secondaryColor;
-        @include mx.flexing(row, 1rem);
-        justify-content: center;
-        height: 80px;
-        width: 100%;
-
-        ul {
+        nav {
+            background-color: var.$secondaryColor;
             @include mx.flexing(row, 1rem);
-            align-items: center;
+            justify-content: center;
+            height: 80px;
+            width: 100%;
 
-            li {
-                list-style: none;
-                text-transform: uppercase;
-                @include mx.pageFont(400, normal, var.$secondaryFont);
+            ul {
+                @include mx.flexing(row, 1rem);
+                align-items: center;
 
-                a {
-                    text-decoration: none;
+                li {
+                    list-style: none;
+                    text-transform: uppercase;
                     @include mx.pageFont(400, normal, var.$secondaryFont);
 
-                    &:hover {
-                        color: var.$infoFont;
+                    a {
+                        text-decoration: none;
+                        @include mx.pageFont(400, normal, var.$secondaryFont);
+
+                        &:hover {
+                            color: var.$infoFont;
+                        }
                     }
                 }
             }
         }
-    }
 
-    header {
-        height: 940px;
-        width: 100%;
-        position: relative;
-        z-index: 1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-
-        .hero-container {
+        header {
+            height: 940px;
+            width: 100%;
+            position: relative;
+            z-index: 1;
             display: flex;
             justify-content: center;
             align-items: center;
 
-            span {
-                background-color: var.$primaryColor;
-                border: 4px solid var.$primaryFont;
-                border-radius: 50%;
-            }
 
-            #circle1 {
-                position: relative;
-                width: 680px;
-                height: 680px;
+            .hero-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
 
-                h1 {
-                    @include mx.pageFont(400, normal, var.$primaryFont);
-                    @extend %noMarPad;
-                    font-size: 110px;
-                    color: var.$primaryFont;
-                    position: absolute;
-                    left: -20%;
-                    top: -6%;
-                    z-index: 5;
+                span {
+                    background-color: var.$primaryColor;
+                    border: 4px solid var.$primaryFont;
+                    border-radius: 50%;
                 }
 
-                #circle2 {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    position: absolute;
-                    right: -10%;
-                    bottom: 0%;
-                    text-transform: uppercase;
-                    width: 250px;
-                    height: 250px;
+                #circle1 {
+                    position: relative;
+                    width: 47.2vw;
+                    height: 47.2vw;
 
-                    h4 {
+                    h1 {
                         @include mx.pageFont(400, normal, var.$primaryFont);
-                        font-size: 22px;
                         @extend %noMarPad;
-                        text-align: center;
+                        font-size: 8.2vw;
+                        color: var.$primaryFont;
+                        position: absolute;
+                        left: -20%;
+                        top: -6%;
+                        z-index: 5;
+                    }
+
+                    #circle2 {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: absolute;
+                        right: -10%;
+                        bottom: 0%;
+                        text-transform: uppercase;
+                        width: 20.8vw;
+                        height: 20.8vw;
+
+                        h4 {
+                            @include mx.pageFont(400, normal, var.$primaryFont);
+                            font-size: 1.5vw;
+                            @extend %noMarPad;
+                            text-align: center;
+                        }
                     }
                 }
             }
         }
     }
-}
 
 
 
 
 
 
-#sectionCalc {
-    @include mx.pageFont(400, normal, var.$primaryFont);
-    @include mx.sectionColoring(var.$secondaryColor, var.$primaryFont);
-    @include mx.flexing(column, 1rem);
-    justify-content: center;
-    height: 940px;
-    position: relative;
+    #sectionCalc {
+        @include mx.pageFont(400, normal, var.$primaryFont);
+        @include mx.sectionColoring(var.$secondaryColor, var.$primaryFont);
+        @include mx.flexing(column, 1rem);
+        justify-content: center;
+        height: 940px;
+        position: relative;
 
-    span {
-        @include mx.sectionCircle(var.$secondaryColor, 7px solid var.$primaryColor);
-        @include mx.flexing(column, 0);
-        @extend %flexAbsoluteCenter;
+        span {
+            @include mx.sectionCircle(var.$secondaryColor, 7px solid var.$primaryColor);
+            @include mx.flexing(column, 0);
+            @extend %flexAbsoluteCenter;
 
-        h2 {
-            @include mx.pageFont(400, normal, var.$secondaryFont);
-            font-size: 24px;
+            h2 {
+                @include mx.pageFont(400, normal, var.$secondaryFont);
+                font-size: 24px;
+            }
+        }
+
+        article {
+            @include mx.flexing(column, 0);
+            align-items: center;
+            position: relative;
+
+            h3 {
+                @include mx.pageFont(400, normal, var.$primaryColor);
+                @extend %noMarPad;
+                margin-bottom: 3rem;
+                font-size: 48px;
+            }
+
+            h4 {
+                @include mx.pageFont(400, normal, var.$secondaryFont);
+                @extend %noMarPad;
+                margin-bottom: 3rem;
+                font-size: 36px;
+            }
+
+            p {
+                font-size: 20px;
+                @extend %noMarPad;
+                @include mx.pageFont(400, normal, var.$secondaryFont);
+            }
+
+            input {
+                @include mx.sectionColoring(var.$primaryColor, var.$secondaryColor);
+                @include mx.pageFont(400, normal, var.$infoFont);
+                border: none;
+                border-radius: 2rem;
+                font-size: 20px;
+                margin-top: 4rem;
+                width: 45vw;
+                padding: 1rem 2rem;
+
+                &::placeholder {
+                    font-size: 20px;
+                    color: var.$infoFont;
+                }
+            }
+
+            textarea:focus,
+            input:focus {
+                outline: none;
+            }
+
+            button {
+                @include mx.sectionColoring(var.$primaryColor, var.$secondaryFont);
+                @include mx.pageFont(400, normal, var.$infoFont);
+                margin-top: 2rem;
+                border: none;
+                border-radius: 2rem;
+                width: 12rem;
+                padding: 0.5rem 2rem;
+
+                &:hover {
+                    @include mx.sectionColoring(var.$secondaryFont, var.$primaryFont);
+                    cursor: pointer
+                }
+            }
+
         }
     }
 
-    article {
-        @include mx.flexing(column, 0);
-        align-items: center;
+    #sectionCheck {
+        @include mx.pageFont(400, normal, var.$primaryFont);
+        @include mx.sectionColoring(var.$primaryColor, var.$primaryFont);
+        @include mx.flexing(column, 1rem);
+        justify-content: center;
+        height: 940px;
         position: relative;
 
-        h3 {
-            @include mx.pageFont(400, normal, var.$primaryColor);
-            @extend %noMarPad;
-            margin-bottom: 3rem;
-            font-size: 48px;
+        span {
+            @include mx.sectionCircle(var.$primaryColor, 7px solid var.$secondaryColor);
+            @include mx.flexing(column, 0);
+            @extend %flexAbsoluteCenter;
+
+            h2 {
+                @include mx.pageFont(400, normal, var.$secondaryColor);
+                font-size: 24px;
+            }
         }
 
-        h4 {
-            @include mx.pageFont(400, normal, var.$secondaryFont);
-            @extend %noMarPad;
-            margin-bottom: 3rem;
-            font-size: 36px;
-        }
+        article {
+            @include mx.flexing(column, 0);
+            align-items: center;
+            position: relative;
 
-        p {
-            font-size: 20px;
-            @extend %noMarPad;
-            @include mx.pageFont(400, normal, var.$secondaryFont);
-        }
+            h3 {
+                @include mx.pageFont(400, normal, var.$primaryFont);
+                @extend %noMarPad;
+                margin-bottom: 3rem;
+                font-size: 36px;
+            }
 
-        input {
-            @include mx.sectionColoring(var.$primaryColor, var.$secondaryColor);
-            @include mx.pageFont(400, normal, var.$infoFont);
-            border: none;
-            border-radius: 2rem;
-            font-size: 20px;
-            margin-top: 4rem;
-            width: 40rem;
-            padding: 1rem 2rem;
-
-            &::placeholder {
+            p {
                 font-size: 20px;
+                @extend %noMarPad;
+            }
+
+            input {
+                @include mx.sectionColoring(var.$secondaryColor, var.$secondaryFont);
+                @include mx.pageFont(400, normal, var.$secondaryFont);
+                border: none;
+                border-radius: 2rem;
+                font-size: 20px;
+                margin-top: 4rem;
+                width: 45vw;
+                padding: 1rem 2rem;
+
+                &::placeholder {
+                    font-size: 20px;
+                    color: var.$primaryColor;
+                }
+            }
+
+            textarea:focus,
+            input:focus {
+                outline: none;
+            }
+
+            button {
+                @include mx.sectionColoring(var.$secondaryColor, var.$secondaryFont);
+                @include mx.pageFont(400, normal, var.$secondaryFont);
+                margin-top: 2rem;
+                border: none;
+                border-radius: 2rem;
+                width: 12rem;
+                padding: 0.5rem 2rem;
+
+                &:hover {
+                    @include mx.sectionColoring(var.$secondaryFont, var.$primaryFont);
+                    cursor: pointer
+                }
+            }
+
+        }
+    }
+
+    #sectionResource {
+        @include mx.pageFont(400, normal, var.$secondaryFont);
+        @include mx.sectionColoring(var.$secondaryColor, var.$secondaryFont );
+        @include mx.flexing(column, 1rem);
+        justify-content: center;
+        height: 940px;
+        position: relative;
+
+        span {
+            @include mx.sectionCircle(var.$secondaryColor, 7px solid var.$primaryColor);
+            @include mx.flexing(column, 0);
+            @extend %flexAbsoluteCenter;
+
+            h2 {
+                @include mx.pageFont(400, normal, var.$secondaryFont);
+                font-size: 24px;
+            }
+        }
+
+        article {
+            @include mx.flexing(column, 3rem);
+            padding-left: 12rem;
+
+            h2 {
+                @extend %noMarPad;
+                @include mx.pageFont(400, normal, var.$secondaryFont);
+                font-size: 64px;
+            }
+
+            p {
+                font-size: 20px;
+                width: 420px;
+            }
+
+            ul {
+                @extend %noMarPad;
+                margin-left: 1rem;
+                @include mx.flexing(column, 1.5rem);
+
+                li {
+                    &:hover {
+                        color: var.$infoFont;
+                    }
+
+                    a {
+                        font-size: 20px;
+                        color: var.$secondaryFont;
+
+                        &:hover {
+                            color: var.$infoFont;
+                        }
+                    }
+
+                }
+            }
+        }
+
+
+        #resourceCircle {
+            background-color: var.$secondaryColor;
+            border: 5px solid var.$primaryColor;
+            border-radius: 50%;
+            position: absolute;
+            top: 120px;
+            left: 60%;
+            width: 1000px;
+            height: 1000px;
+
+        }
+    }
+
+
+    #sectionMission {
+        @include mx.pageFont(400, normal, var.$primaryFont);
+        @include mx.sectionColoring(var.$primaryColor, var.$secondaryFont );
+        @include mx.flexing(column, 1rem);
+        justify-content: center;
+        height: 940px;
+        position: relative;
+
+        span {
+            @include mx.sectionCircle(var.$primaryColor, 7px solid var.$secondaryColor);
+            @include mx.flexing(column, 0);
+            @extend %flexAbsoluteCenter;
+
+            h2 {
+                @include mx.pageFont(400, normal, var.$secondaryColor);
+                font-size: 24px;
+            }
+        }
+
+        article {
+            @include mx.flexing(column, 3rem);
+            padding-left: 12rem;
+
+            h2 {
+                @extend %noMarPad;
+                @include mx.pageFont(400, normal, var.$primaryFont);
+                font-size: 64px;
+            }
+
+            p {
+                font-size: 20px;
+                width: 520px;
                 color: var.$infoFont;
             }
         }
 
-        textarea:focus,
-        input:focus {
-            outline: none;
-        }
-
-        button {
-            @include mx.sectionColoring(var.$primaryColor, var.$secondaryFont);
-            @include mx.pageFont(400, normal, var.$infoFont);
-            margin-top: 2rem;
-            border: none;
-            border-radius: 2rem;
-            width: 12rem;
-            padding: 0.5rem 2rem;
-
-            &:hover {
-                @include mx.sectionColoring(var.$secondaryFont, var.$primaryFont);
-                cursor: pointer
-            }
-        }
-
-    }
-}
-
-#sectionCheck {
-    @include mx.pageFont(400, normal, var.$primaryFont);
-    @include mx.sectionColoring(var.$primaryColor, var.$primaryFont);
-    @include mx.flexing(column, 1rem);
-    justify-content: center;
-    height: 940px;
-    position: relative;
-
-    span {
-        @include mx.sectionCircle(var.$primaryColor, 7px solid var.$secondaryColor);
-        @include mx.flexing(column, 0);
-        @extend %flexAbsoluteCenter;
-
-        h2 {
-            @include mx.pageFont(400, normal, var.$secondaryColor);
-            font-size: 24px;
-        }
-    }
-
-    article {
-        @include mx.flexing(column, 0);
-        align-items: center;
-        position: relative;
-
-        h3 {
-            @include mx.pageFont(400, normal, var.$primaryFont);
-            @extend %noMarPad;
-            margin-bottom: 3rem;
-            font-size: 36px;
-        }
-
-        p {
-            font-size: 20px;
-            @extend %noMarPad;
-        }
-
-        input {
-            @include mx.sectionColoring(var.$secondaryColor, var.$secondaryFont);
-            @include mx.pageFont(400, normal, var.$secondaryFont);
-            border: none;
-            border-radius: 2rem;
-            font-size: 20px;
-            margin-top: 4rem;
-            width: 40rem;
-            padding: 1rem 2rem;
-
-            &::placeholder {
-                font-size: 20px;
-                color: var.$primaryColor;
-            }
-        }
-
-        textarea:focus,
-        input:focus {
-            outline: none;
-        }
-
-        button {
-            @include mx.sectionColoring(var.$secondaryColor, var.$secondaryFont);
-            @include mx.pageFont(400, normal, var.$secondaryFont);
-            margin-top: 2rem;
-            border: none;
-            border-radius: 2rem;
-            width: 12rem;
-            padding: 0.5rem 2rem;
-
-            &:hover {
-                @include mx.sectionColoring(var.$secondaryFont, var.$primaryFont);
-                cursor: pointer
-            }
-        }
-
-    }
-}
-
-#sectionResource {
-    @include mx.pageFont(400, normal, var.$secondaryFont);
-    @include mx.sectionColoring(var.$secondaryColor, var.$secondaryFont );
-    @include mx.flexing(column, 1rem);
-    justify-content: center;
-    height: 940px;
-    position: relative;
-
-    span {
-        @include mx.sectionCircle(var.$secondaryColor, 7px solid var.$primaryColor);
-        @include mx.flexing(column, 0);
-        @extend %flexAbsoluteCenter;
-
-        h2 {
-            @include mx.pageFont(400, normal, var.$secondaryFont);
-            font-size: 24px;
-        }
-    }
-
-    article {
-        @include mx.flexing(column, 3rem);
-        padding-left: 12rem;
-
-        h2 {
-            @extend %noMarPad;
-            @include mx.pageFont(400, normal, var.$secondaryFont);
-            font-size: 64px;
-        }
-
-        p {
-            font-size: 20px;
-            width: 420px;
-        }
-
-        ul {
-            @extend %noMarPad;
-            margin-left: 1rem;
-            @include mx.flexing(column, 1.5rem);
-
-            li {
-                &:hover {
-                    color: var.$infoFont;
-                }
-
-                a {
-                    font-size: 20px;
-                    color: var.$secondaryFont;
-
-                    &:hover {
-                        color: var.$infoFont;
-                    }
-                }
-
-            }
-        }
-    }
-
-
-    #resourceCircle {
-        background-color: var.$secondaryColor;
-        border: 5px solid var.$primaryColor;
-        border-radius: 50%;
-        position: absolute;
-        top: 120px;
-        left: 60%;
-        width: 1000px;
-        height: 1000px;
-
-    }
-}
-
-
-#sectionMission {
-    @include mx.pageFont(400, normal, var.$primaryFont);
-    @include mx.sectionColoring(var.$primaryColor, var.$secondaryFont );
-    @include mx.flexing(column, 1rem);
-    justify-content: center;
-    height: 940px;
-    position: relative;
-
-    span {
-        @include mx.sectionCircle(var.$primaryColor, 7px solid var.$secondaryColor);
-        @include mx.flexing(column, 0);
-        @extend %flexAbsoluteCenter;
-
-        h2 {
-            @include mx.pageFont(400, normal, var.$secondaryColor);
-            font-size: 24px;
-        }
-    }
-
-    article {
-        @include mx.flexing(column, 3rem);
-        padding-left: 12rem;
-
-        h2 {
-            @extend %noMarPad;
-            @include mx.pageFont(400, normal, var.$primaryFont);
-            font-size: 64px;
-        }
-
-        p {
-            font-size: 20px;
-            width: 520px;
-            color: var.$infoFont;
-        }
-    }
-
-    #missionCircle1 {
-        background-color: var.$primaryColor;
-        border: 5px solid var.$primaryFont;
-        border-radius: 50%;
-        position: absolute;
-        top: 120px;
-        left: 70%;
-        width: 700px;
-        height: 700px;
-        overflow: hidden;
-    }
-
-    #missionCircle2 {
-        background-color: var.$primaryColor;
-        border: 5px solid var.$primaryFont;
-        border-radius: 50%;
-        position: absolute;
-        top: 500px;
-        left: 60%;
-        width: 300px;
-        height: 300px;
-        overflow: hidden;
-    }
-
-}
-
-.container-footer {
-    @include mx.sectionColoring(var.$primaryColor, var.$infoFont);
-    padding: 5rem;
-    @include mx.flexing(row, 0);
-    @extend %flexAbsoluteCenter;
-
-    #footerInfo {
-        @include mx.flexing(row, 2rem);
-
-        ul {
-            @extend %noMarPad;
-            margin-top: 2rem;
-
-            li,
-            h5,
-            p {
-                @include mx.pageFont(400, normal, var.$infoFont);
-                @extend %noMarPad;
-                font-size: 20px;
-            }
-
-            text-decoration: none;
-            list-style: none;
-
-            li {
-
-                h5 {
-                    margin-bottom: 2rem;
-                }
-
-            }
-
-            form {
-                @include mx.flexing(column, 1rem);
-
-                input {
-                    @include mx.pageFont(400, normal, var.$secondaryFont);
-                    border: none;
-                    border-radius: 2rem;
-                    padding: 0.4rem 1rem;
-                }
-
-                textarea:focus,
-                input:focus {
-                    outline: none;
-                }
-
-                #email {
-                    @include mx.sectionColoring(var.$primaryFont, var.$primaryColor);
-                    width: 12rem;
-
-                    &::placeholder {
-                        color: var.$primaryColor;
-                    }
-                }
-
-                #submit {
-                    @include mx.sectionColoring(var.$primaryColor, var.$primaryFont);
-                    border: 1px solid var.$primaryFont;
-                    width: 5rem;
-
-                    &:hover {
-                        color: var.$infoFont;
-                        cursor: pointer;
-                    }
-                }
-            }
-
-        }
-
-        ul:nth-child(2) li:nth-child(2) {
-            margin-bottom: 2rem;
-        }
-
-        ul:nth-child(3) li:nth-child(2) {
-            margin-top: -1rem;
-            margin-bottom: 1rem;
-        }
-
-        #footerLogo {
-            border: 3px solid var.$primaryFont;
-            width: 200px;
-            height: 200px;
+        #missionCircle1 {
+            background-color: var.$primaryColor;
+            border: 5px solid var.$primaryFont;
             border-radius: 50%;
-            @include mx.flexing(column, 0);
-            @extend %flexAbsoluteCenter;
-            position: relative;
+            position: absolute;
+            top: 120px;
+            left: 70%;
+            width: 700px;
+            height: 700px;
+            overflow: hidden;
+        }
 
-            .logoText {
+        #missionCircle2 {
+            background-color: var.$primaryColor;
+            border: 5px solid var.$primaryFont;
+            border-radius: 50%;
+            position: absolute;
+            top: 500px;
+            left: 60%;
+            width: 300px;
+            height: 300px;
+            overflow: hidden;
+        }
 
-                p,
-                h2 {
-                    @extend %noMarPad;
+    }
+
+    .container-footer {
+        @include mx.sectionColoring(var.$primaryColor, var.$infoFont);
+        padding: 5rem;
+        @include mx.flexing(row, 0);
+        @extend %flexAbsoluteCenter;
+
+        #footerInfo {
+            @include mx.flexing(row, 2rem);
+
+            ul {
+                @extend %noMarPad;
+                margin-top: 2rem;
+
+                li,
+                h5,
+                p {
                     @include mx.pageFont(400, normal, var.$infoFont);
+                    @extend %noMarPad;
                     font-size: 20px;
                 }
 
-                h2 {
-                    @include mx.pageFont(400, normal, var.$primaryFont);
-                    font-size: 64px;
+                text-decoration: none;
+                list-style: none;
+
+                li {
+
+                    h5 {
+                        margin-bottom: 2rem;
+                    }
+
+                }
+
+                form {
+                    @include mx.flexing(column, 1rem);
+
+                    input {
+                        @include mx.pageFont(400, normal, var.$secondaryFont);
+                        border: none;
+                        border-radius: 2rem;
+                        padding: 0.4rem 1rem;
+                    }
+
+                    textarea:focus,
+                    input:focus {
+                        outline: none;
+                    }
+
+                    #email {
+                        @include mx.sectionColoring(var.$primaryFont, var.$primaryColor);
+                        width: 12rem;
+
+                        &::placeholder {
+                            color: var.$primaryColor;
+                        }
+                    }
+
+                    #submit {
+                        @include mx.sectionColoring(var.$primaryColor, var.$primaryFont);
+                        border: 1px solid var.$primaryFont;
+                        width: 5rem;
+
+                        &:hover {
+                            color: var.$infoFont;
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+            }
+
+            ul:nth-child(2) li:nth-child(2) {
+                margin-bottom: 2rem;
+            }
+
+            ul:nth-child(3) li:nth-child(2) {
+                margin-top: -1rem;
+                margin-bottom: 1rem;
+            }
+
+            #footerLogo {
+                border: 3px solid var.$primaryFont;
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                @include mx.flexing(column, 0);
+                @extend %flexAbsoluteCenter;
+                position: relative;
+
+                .logoText {
+
+                    p,
+                    h2 {
+                        @extend %noMarPad;
+                        @include mx.pageFont(400, normal, var.$infoFont);
+                        font-size: 20px;
+                    }
+
+                    h2 {
+                        @include mx.pageFont(400, normal, var.$primaryFont);
+                        font-size: 64px;
+                    }
+                }
+
+                #footerCircle {
+                    background-color: var.$primaryColor;
+                    border: 3px solid var.$primaryFont;
+                    position: absolute;
+                    border-radius: 50%;
+                    width: 90px;
+                    height: 90px;
+                    bottom: -2%;
+                    right: -21%;
                 }
             }
-
-            #footerCircle {
-                background-color: var.$primaryColor;
-                border: 3px solid var.$primaryFont;
-                position: absolute;
-                border-radius: 50%;
-                width: 90px;
-                height: 90px;
-                bottom: -2%;
-                right: -21%;
-            }
         }
+
+
     }
-
-
-}
 
 }
