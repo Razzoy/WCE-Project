@@ -75,6 +75,7 @@ hgroup {
         border: 5px solid var.$primaryFont;
         border-radius: 50%;
 
+
     }
 
     #circle1 {
@@ -185,8 +186,6 @@ hgroup {
         }
 
     }
-
-
 }
 
 #sectionCheck {
@@ -256,6 +255,7 @@ hgroup {
 
     }
 }
+
 
 #sectionResource {
     @include mx.pageFont(400, normal, var.$secondaryFont);
@@ -351,15 +351,15 @@ hgroup {
     }
 
 }
-
 .container-footer {
     @include mx.sectionColoring(var.$primaryColor, var.$infoFont);
     @include mx.gridable(2, 1fr, 0);
     padding: 5rem;
     height: 350px;
-
+ 
     #footerInfo {
         @include mx.gridable(3, 1fr, 2rem);
+
 
         ul {
             @extend %noMarPad;
@@ -420,6 +420,7 @@ hgroup {
         }
     }
 
+
     #footerLogo {
 
         p,
@@ -428,7 +429,6 @@ hgroup {
             @include mx.pageFont(400, normal, var.$infoFont);
             font-size: 20px;
         }
-
         h2 {
             @include mx.pageFont(400, normal, var.$primaryFont);
             font-size: 64px;

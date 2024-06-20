@@ -306,6 +306,7 @@ hgroup #circle2 .header-subtext h4 {
   padding: 0.5rem 2rem;
 }
 
+
 #sectionResource {
   font-family: "Ubuntu Mono", monospace;
   font-weight: 400;
@@ -491,8 +492,10 @@ hgroup #circle2 .header-subtext h4 {
   margin-top: -1rem;
   margin-bottom: 1rem;
 }
+
 .container-footer #footerLogo p,
 .container-footer #footerLogo h2 {
+
   font-family: "Ubuntu Mono", monospace;
   font-weight: 400;
   font-style: normal;
