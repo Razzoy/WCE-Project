@@ -1,13 +1,42 @@
-@media only screen and (max-width: 600px) {
+@use "../helpers/_placeholders";
+@use "../helpers/_variables" as var;
+@use "../helpers/_mixins" as mx;
+
+
+@media only screen and (max-width: 900px) {
     body {
-        #sectionCheck article input {
-            width: auto;
+        width: 100%;
+        #sectionCalc {
+            article {
+                input {
+                    width: auto;
+                }
+            }
         }
 
-        #sectionCalc article input {
-            width: auto;
+        #sectionResource {
+            #resourceCircle {
+                display: none;
+            }
         }
 
+        #sectionCheck {
+            article {
+                input {
+                    width: auto;
+                }
+            }
+        }
+
+        #sectionMission {
+            #missionCircle1 {
+                display: none;
+            }
+
+            #missionCircle2 {
+                display: none;
+            }
+        }
 
         #footerInfo {
             ul:nth-child(-n+2) {

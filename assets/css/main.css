@@ -1,25 +1,52 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 body,
 #sectionCheck article h3,
-#sectionCheck article p, hgroup header .hero-container #circle1 h1, hgroup header .hero-container #circle1 #circle2 h4, #sectionCalc article h3, #sectionCalc article h4, #sectionCalc article p, #sectionResource article h2, #sectionResource article ul, #sectionMission article h2, .container-footer #footerInfo ul, .container-footer #footerInfo ul li,
-.container-footer #footerInfo ul h5,
-.container-footer #footerInfo ul p, .container-footer #footerInfo #footerLogo .logoText p,
-.container-footer #footerInfo #footerLogo .logoText h2 {
+#sectionCheck article p, .container-main hgroup header .hero-container #circle1 h1, .container-main hgroup header .hero-container #circle1 #circle2 h4, .container-main #sectionCalc article h3, .container-main #sectionCalc article h4, .container-main #sectionCalc article p, .container-main #sectionCheck article h3, .container-main #sectionCheck article p, .container-main #sectionResource article h2, .container-main #sectionResource article ul, .container-main #sectionMission article h2, .container-main .container-footer #footerInfo ul, .container-main .container-footer #footerInfo ul li,
+.container-main .container-footer #footerInfo ul h5,
+.container-main .container-footer #footerInfo ul p, .container-main .container-footer #footerInfo #footerLogo .logoText p,
+.container-main .container-footer #footerInfo #footerLogo .logoText h2 {
   margin: 0;
   padding: 0;
 }
 
-#sectionCalc span, #sectionCheck span, #sectionResource span, #sectionMission span, .container-footer, .container-footer #footerInfo #footerLogo {
+.container-main #sectionCalc span, .container-main #sectionCheck span, .container-main #sectionResource span, .container-main #sectionMission span, .container-main .container-footer, .container-main .container-footer #footerInfo #footerLogo {
   justify-content: center;
   align-items: center;
 }
 
-@media only screen and (max-width: 600px) {
-  body #sectionCheck article input {
-    width: auto;
+.container-main .container-footer #footerInfo #footerLogo .logoText p,
+.container-main .container-footer #footerInfo #footerLogo .logoText h2, .container-main .container-footer #footerInfo ul li,
+.container-main .container-footer #footerInfo ul h5,
+.container-main .container-footer #footerInfo ul p, .container-main .container-footer #footerInfo ul, .container-main #sectionMission article h2, .container-main #sectionResource article ul, .container-main #sectionResource article h2, .container-main #sectionCheck article p, .container-main #sectionCheck article h3, .container-main #sectionCalc article p, .container-main #sectionCalc article h4, .container-main #sectionCalc article h3, .container-main hgroup header .hero-container #circle1 #circle2 h4, .container-main hgroup header .hero-container #circle1 h1, body,
+#sectionCheck article h3,
+#sectionCheck article p {
+  margin: 0;
+  padding: 0;
+}
+
+.container-main .container-footer #footerInfo #footerLogo, .container-main .container-footer, .container-main #sectionMission span, .container-main #sectionResource span, .container-main #sectionCheck span, .container-main #sectionCalc span {
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 900px) {
+  body {
+    width: 100%;
   }
   body #sectionCalc article input {
     width: auto;
+  }
+  body #sectionResource #resourceCircle {
+    display: none;
+  }
+  body #sectionCheck article input {
+    width: auto;
+  }
+  body #sectionMission #missionCircle1 {
+    display: none;
+  }
+  body #sectionMission #missionCircle2 {
+    display: none;
   }
   body #footerInfo ul:nth-child(-n+2) {
     display: none;
@@ -29,16 +56,13 @@ html {
   scroll-behavior: smooth;
 }
 
-body,
-#sectionCheck article h3,
-#sectionCheck article p {
-  overflow-x: hidden;
+.container-main {
+  width: 100%;
 }
-
-hgroup {
+.container-main hgroup {
   background-color: #40A578;
 }
-hgroup nav {
+.container-main hgroup nav {
   background-color: #A5DD9B;
   display: flex;
   flex-direction: row;
@@ -47,13 +71,13 @@ hgroup nav {
   height: 80px;
   width: 100%;
 }
-hgroup nav ul {
+.container-main hgroup nav ul {
   display: flex;
   flex-direction: row;
   gap: 1rem;
   align-items: center;
 }
-hgroup nav ul li {
+.container-main hgroup nav ul li {
   list-style: none;
   text-transform: uppercase;
   font-family: "Ubuntu Mono", monospace;
@@ -61,40 +85,41 @@ hgroup nav ul li {
   font-style: normal;
   color: #006769;
 }
-hgroup nav ul li a {
+.container-main hgroup nav ul li a {
   text-decoration: none;
   font-family: "Ubuntu Mono", monospace;
   font-weight: 400;
   font-style: normal;
   color: #006769;
 }
-hgroup nav ul li a:hover {
+.container-main hgroup nav ul li a:hover {
   color: #FFF;
 }
-hgroup header {
+.container-main hgroup header {
   height: 940px;
+  width: 100%;
   position: relative;
   z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-hgroup header .hero-container {
+.container-main hgroup header .hero-container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-hgroup header .hero-container span {
+.container-main hgroup header .hero-container span {
   background-color: #40A578;
   border: 4px solid #E6FF94;
   border-radius: 50%;
 }
-hgroup header .hero-container #circle1 {
+.container-main hgroup header .hero-container #circle1 {
   position: relative;
   width: 680px;
   height: 680px;
 }
-hgroup header .hero-container #circle1 h1 {
+.container-main hgroup header .hero-container #circle1 h1 {
   font-family: "Ubuntu Mono", monospace;
   font-weight: 400;
   font-style: normal;
@@ -106,7 +131,7 @@ hgroup header .hero-container #circle1 h1 {
   top: -6%;
   z-index: 5;
 }
-hgroup header .hero-container #circle1 #circle2 {
+.container-main hgroup header .hero-container #circle1 #circle2 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -117,7 +142,7 @@ hgroup header .hero-container #circle1 #circle2 {
   width: 250px;
   height: 250px;
 }
-hgroup header .hero-container #circle1 #circle2 h4 {
+.container-main hgroup header .hero-container #circle1 #circle2 h4 {
   font-family: "Ubuntu Mono", monospace;
   font-weight: 400;
   font-style: normal;
@@ -125,8 +150,7 @@ hgroup header .hero-container #circle1 #circle2 h4 {
   font-size: 22px;
   text-align: center;
 }
-
-#sectionCalc {
+.container-main #sectionCalc {
   font-family: "Ubuntu Mono", monospace;
   font-weight: 400;
   font-style: normal;
@@ -140,7 +164,7 @@ hgroup header .hero-container #circle1 #circle2 h4 {
   height: 940px;
   position: relative;
 }
-#sectionCalc span {
+.container-main #sectionCalc span {
   background-color: #A5DD9B;
   border: 7px solid #40A578;
   width: 240px;
@@ -153,21 +177,21 @@ hgroup header .hero-container #circle1 #circle2 h4 {
   flex-direction: column;
   gap: 0;
 }
-#sectionCalc span h2 {
+.container-main #sectionCalc span h2 {
   font-family: "Ubuntu Mono", monospace;
   font-weight: 400;
   font-style: normal;
   color: #006769;
   font-size: 24px;
 }
-#sectionCalc article {
+.container-main #sectionCalc article {
   display: flex;
   flex-direction: column;
   gap: 0;
   align-items: center;
   position: relative;
 }
-#sectionCalc article h3 {
+.container-main #sectionCalc article h3 {
   font-family: "Ubuntu Mono", monospace;
   font-weight: 400;
   font-style: normal;
@@ -175,7 +199,7 @@ hgroup header .hero-container #circle1 #circle2 h4 {
   margin-bottom: 3rem;
   font-size: 48px;
 }
-#sectionCalc article h4 {
+.container-main #sectionCalc article h4 {
   font-family: "Ubuntu Mono", monospace;
   font-weight: 400;
   font-style: normal;
@@ -183,14 +207,14 @@ hgroup header .hero-container #circle1 #circle2 h4 {
   margin-bottom: 3rem;
   font-size: 36px;
 }
-#sectionCalc article p {
+.container-main #sectionCalc article p {
   font-size: 20px;
   font-family: "Ubuntu Mono", monospace;
   font-weight: 400;
   font-style: normal;
   color: #006769;
 }
-#sectionCalc article input {
+.container-main #sectionCalc article input {
   background-color: #40A578;
   color: #A5DD9B;
   font-family: "Ubuntu Mono", monospace;
@@ -204,19 +228,19 @@ hgroup header .hero-container #circle1 #circle2 h4 {
   width: 40rem;
   padding: 1rem 2rem;
 }
-#sectionCalc article input::-moz-placeholder {
+.container-main #sectionCalc article input::-moz-placeholder {
   font-size: 20px;
   color: #FFF;
 }
-#sectionCalc article input::placeholder {
+.container-main #sectionCalc article input::placeholder {
   font-size: 20px;
   color: #FFF;
 }
-#sectionCalc article textarea:focus,
-#sectionCalc article input:focus {
+.container-main #sectionCalc article textarea:focus,
+.container-main #sectionCalc article input:focus {
   outline: none;
 }
-#sectionCalc article button {
+.container-main #sectionCalc article button {
   background-color: #40A578;
   color: #006769;
   font-family: "Ubuntu Mono", monospace;
@@ -229,13 +253,12 @@ hgroup header .hero-container #circle1 #circle2 h4 {
   width: 12rem;
   padding: 0.5rem 2rem;
 }
-#sectionCalc article button:hover {
+.container-main #sectionCalc article button:hover {
   background-color: #006769;
   color: #E6FF94;
   cursor: pointer;
 }
-
-#sectionCheck {
+.container-main #sectionCheck {
   font-family: "Ubuntu Mono", monospace;
   font-weight: 400;
   font-style: normal;
@@ -249,7 +272,7 @@ hgroup header .hero-container #circle1 #circle2 h4 {
   height: 940px;
   position: relative;
 }
-#sectionCheck span {
+.container-main #sectionCheck span {
   background-color: #40A578;
   border: 7px solid #A5DD9B;
   width: 240px;
@@ -262,21 +285,21 @@ hgroup header .hero-container #circle1 #circle2 h4 {
   flex-direction: column;
   gap: 0;
 }
-#sectionCheck span h2 {
+.container-main #sectionCheck span h2 {
   font-family: "Ubuntu Mono", monospace;
   font-weight: 400;
   font-style: normal;
   color: #A5DD9B;
   font-size: 24px;
 }
-#sectionCheck article {
+.container-main #sectionCheck article {
   display: flex;
   flex-direction: column;
   gap: 0;
   align-items: center;
   position: relative;
 }
-#sectionCheck article h3 {
+.container-main #sectionCheck article h3 {
   font-family: "Ubuntu Mono", monospace;
   font-weight: 400;
   font-style: normal;
@@ -284,10 +307,10 @@ hgroup header .hero-container #circle1 #circle2 h4 {
   margin-bottom: 3rem;
   font-size: 36px;
 }
-#sectionCheck article p {
+.container-main #sectionCheck article p {
   font-size: 20px;
 }
-#sectionCheck article input {
+.container-main #sectionCheck article input {
   background-color: #A5DD9B;
   color: #006769;
   font-family: "Ubuntu Mono", monospace;
@@ -301,19 +324,19 @@ hgroup header .hero-container #circle1 #circle2 h4 {
   width: 40rem;
   padding: 1rem 2rem;
 }
-#sectionCheck article input::-moz-placeholder {
+.container-main #sectionCheck article input::-moz-placeholder {
   font-size: 20px;
   color: #40A578;
 }
-#sectionCheck article input::placeholder {
+.container-main #sectionCheck article input::placeholder {
   font-size: 20px;
   color: #40A578;
 }
-#sectionCheck article textarea:focus,
-#sectionCheck article input:focus {
+.container-main #sectionCheck article textarea:focus,
+.container-main #sectionCheck article input:focus {
   outline: none;
 }
-#sectionCheck article button {
+.container-main #sectionCheck article button {
   background-color: #A5DD9B;
   color: #006769;
   font-family: "Ubuntu Mono", monospace;
@@ -326,13 +349,12 @@ hgroup header .hero-container #circle1 #circle2 h4 {
   width: 12rem;
   padding: 0.5rem 2rem;
 }
-#sectionCheck article button:hover {
+.container-main #sectionCheck article button:hover {
   background-color: #006769;
   color: #E6FF94;
   cursor: pointer;
 }
-
-#sectionResource {
+.container-main #sectionResource {
   font-family: "Ubuntu Mono", monospace;
   font-weight: 400;
   font-style: normal;
@@ -346,7 +368,7 @@ hgroup header .hero-container #circle1 #circle2 h4 {
   height: 940px;
   position: relative;
 }
-#sectionResource span {
+.container-main #sectionResource span {
   background-color: #A5DD9B;
   border: 7px solid #40A578;
   width: 240px;
@@ -359,47 +381,47 @@ hgroup header .hero-container #circle1 #circle2 h4 {
   flex-direction: column;
   gap: 0;
 }
-#sectionResource span h2 {
+.container-main #sectionResource span h2 {
   font-family: "Ubuntu Mono", monospace;
   font-weight: 400;
   font-style: normal;
   color: #006769;
   font-size: 24px;
 }
-#sectionResource article {
+.container-main #sectionResource article {
   display: flex;
   flex-direction: column;
   gap: 3rem;
   padding-left: 12rem;
 }
-#sectionResource article h2 {
+.container-main #sectionResource article h2 {
   font-family: "Ubuntu Mono", monospace;
   font-weight: 400;
   font-style: normal;
   color: #006769;
   font-size: 64px;
 }
-#sectionResource article p {
+.container-main #sectionResource article p {
   font-size: 20px;
   width: 420px;
 }
-#sectionResource article ul {
+.container-main #sectionResource article ul {
   margin-left: 1rem;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
-#sectionResource article ul li:hover {
+.container-main #sectionResource article ul li:hover {
   color: #FFF;
 }
-#sectionResource article ul li a {
+.container-main #sectionResource article ul li a {
   font-size: 20px;
   color: #006769;
 }
-#sectionResource article ul li a:hover {
+.container-main #sectionResource article ul li a:hover {
   color: #FFF;
 }
-#sectionResource #resourceCircle {
+.container-main #sectionResource #resourceCircle {
   background-color: #A5DD9B;
   border: 5px solid #40A578;
   border-radius: 50%;
@@ -409,8 +431,7 @@ hgroup header .hero-container #circle1 #circle2 h4 {
   width: 1000px;
   height: 1000px;
 }
-
-#sectionMission {
+.container-main #sectionMission {
   font-family: "Ubuntu Mono", monospace;
   font-weight: 400;
   font-style: normal;
@@ -424,7 +445,7 @@ hgroup header .hero-container #circle1 #circle2 h4 {
   height: 940px;
   position: relative;
 }
-#sectionMission span {
+.container-main #sectionMission span {
   background-color: #40A578;
   border: 7px solid #A5DD9B;
   width: 240px;
@@ -437,32 +458,32 @@ hgroup header .hero-container #circle1 #circle2 h4 {
   flex-direction: column;
   gap: 0;
 }
-#sectionMission span h2 {
+.container-main #sectionMission span h2 {
   font-family: "Ubuntu Mono", monospace;
   font-weight: 400;
   font-style: normal;
   color: #A5DD9B;
   font-size: 24px;
 }
-#sectionMission article {
+.container-main #sectionMission article {
   display: flex;
   flex-direction: column;
   gap: 3rem;
   padding-left: 12rem;
 }
-#sectionMission article h2 {
+.container-main #sectionMission article h2 {
   font-family: "Ubuntu Mono", monospace;
   font-weight: 400;
   font-style: normal;
   color: #E6FF94;
   font-size: 64px;
 }
-#sectionMission article p {
+.container-main #sectionMission article p {
   font-size: 20px;
   width: 520px;
   color: #FFF;
 }
-#sectionMission #missionCircle1 {
+.container-main #sectionMission #missionCircle1 {
   background-color: #40A578;
   border: 5px solid #E6FF94;
   border-radius: 50%;
@@ -473,7 +494,7 @@ hgroup header .hero-container #circle1 #circle2 h4 {
   height: 700px;
   overflow: hidden;
 }
-#sectionMission #missionCircle2 {
+.container-main #sectionMission #missionCircle2 {
   background-color: #40A578;
   border: 5px solid #E6FF94;
   border-radius: 50%;
@@ -484,8 +505,7 @@ hgroup header .hero-container #circle1 #circle2 h4 {
   height: 300px;
   overflow: hidden;
 }
-
-.container-footer {
+.container-main .container-footer {
   background-color: #40A578;
   color: #FFF;
   padding: 5rem;
@@ -493,34 +513,34 @@ hgroup header .hero-container #circle1 #circle2 h4 {
   flex-direction: row;
   gap: 0;
 }
-.container-footer #footerInfo {
+.container-main .container-footer #footerInfo {
   display: flex;
   flex-direction: row;
   gap: 2rem;
 }
-.container-footer #footerInfo ul {
+.container-main .container-footer #footerInfo ul {
   margin-top: 2rem;
   text-decoration: none;
   list-style: none;
 }
-.container-footer #footerInfo ul li,
-.container-footer #footerInfo ul h5,
-.container-footer #footerInfo ul p {
+.container-main .container-footer #footerInfo ul li,
+.container-main .container-footer #footerInfo ul h5,
+.container-main .container-footer #footerInfo ul p {
   font-family: "Ubuntu Mono", monospace;
   font-weight: 400;
   font-style: normal;
   color: #FFF;
   font-size: 20px;
 }
-.container-footer #footerInfo ul li h5 {
+.container-main .container-footer #footerInfo ul li h5 {
   margin-bottom: 2rem;
 }
-.container-footer #footerInfo ul form {
+.container-main .container-footer #footerInfo ul form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
-.container-footer #footerInfo ul form input {
+.container-main .container-footer #footerInfo ul form input {
   font-family: "Ubuntu Mono", monospace;
   font-weight: 400;
   font-style: normal;
@@ -529,39 +549,39 @@ hgroup header .hero-container #circle1 #circle2 h4 {
   border-radius: 2rem;
   padding: 0.4rem 1rem;
 }
-.container-footer #footerInfo ul form textarea:focus,
-.container-footer #footerInfo ul form input:focus {
+.container-main .container-footer #footerInfo ul form textarea:focus,
+.container-main .container-footer #footerInfo ul form input:focus {
   outline: none;
 }
-.container-footer #footerInfo ul form #email {
+.container-main .container-footer #footerInfo ul form #email {
   background-color: #E6FF94;
   color: #40A578;
   width: 12rem;
 }
-.container-footer #footerInfo ul form #email::-moz-placeholder {
+.container-main .container-footer #footerInfo ul form #email::-moz-placeholder {
   color: #40A578;
 }
-.container-footer #footerInfo ul form #email::placeholder {
+.container-main .container-footer #footerInfo ul form #email::placeholder {
   color: #40A578;
 }
-.container-footer #footerInfo ul form #submit {
+.container-main .container-footer #footerInfo ul form #submit {
   background-color: #40A578;
   color: #E6FF94;
   border: 1px solid #E6FF94;
   width: 5rem;
 }
-.container-footer #footerInfo ul form #submit:hover {
+.container-main .container-footer #footerInfo ul form #submit:hover {
   color: #FFF;
   cursor: pointer;
 }
-.container-footer #footerInfo ul:nth-child(2) li:nth-child(2) {
+.container-main .container-footer #footerInfo ul:nth-child(2) li:nth-child(2) {
   margin-bottom: 2rem;
 }
-.container-footer #footerInfo ul:nth-child(3) li:nth-child(2) {
+.container-main .container-footer #footerInfo ul:nth-child(3) li:nth-child(2) {
   margin-top: -1rem;
   margin-bottom: 1rem;
 }
-.container-footer #footerInfo #footerLogo {
+.container-main .container-footer #footerInfo #footerLogo {
   border: 3px solid #E6FF94;
   width: 200px;
   height: 200px;
@@ -571,22 +591,22 @@ hgroup header .hero-container #circle1 #circle2 h4 {
   gap: 0;
   position: relative;
 }
-.container-footer #footerInfo #footerLogo .logoText p,
-.container-footer #footerInfo #footerLogo .logoText h2 {
+.container-main .container-footer #footerInfo #footerLogo .logoText p,
+.container-main .container-footer #footerInfo #footerLogo .logoText h2 {
   font-family: "Ubuntu Mono", monospace;
   font-weight: 400;
   font-style: normal;
   color: #FFF;
   font-size: 20px;
 }
-.container-footer #footerInfo #footerLogo .logoText h2 {
+.container-main .container-footer #footerInfo #footerLogo .logoText h2 {
   font-family: "Ubuntu Mono", monospace;
   font-weight: 400;
   font-style: normal;
   color: #E6FF94;
   font-size: 64px;
 }
-.container-footer #footerInfo #footerLogo #footerCircle {
+.container-main .container-footer #footerInfo #footerLogo #footerCircle {
   background-color: #40A578;
   border: 3px solid #E6FF94;
   position: absolute;

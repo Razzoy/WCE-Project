@@ -13,9 +13,10 @@ body,
 #sectionCheck article h3,
 #sectionCheck article p {
     @extend %noMarPad;
-    overflow-x: hidden;
+    // overflow-x: hidden;
 }
-
+.container-main{
+    width: 100%;
 hgroup {
     background-color: var.$primaryColor;
 
@@ -50,6 +51,7 @@ hgroup {
 
     header {
         height: 940px;
+        width: 100%;
         position: relative;
         z-index: 1;
         display: flex;
@@ -521,6 +523,6 @@ hgroup {
     }
 
 
-
+}
 
 }
