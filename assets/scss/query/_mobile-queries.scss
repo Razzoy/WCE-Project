@@ -5,43 +5,86 @@
 
 @media only screen and (max-width: 900px) {
     body {
-        width: 100%;
-        #sectionCalc {
-            article {
-                input {
-                    // width: auto;
+
+
+        .container-main {
+            hgroup {
+                header {
+                    .hero-container {
+                        #circle1 {
+                            width: 250px;
+                            height: 250px;
+
+                            h1 {
+                                font-size: 36px;
+                            }
+
+                            #circle2 {
+                                width: 150px;
+                                height: 150px;
+                            }
+                        }
+                    }
                 }
             }
-        }
 
-        #sectionResource {
-            #resourceCircle {
-                display: none;
-            }
-        }
-
-        #sectionCheck {
-            article {
-                input {
-                    // width: auto;
+            #sectionCalc {
+                article {
+                    input {
+                        // width: auto;
+                    }
                 }
             }
-        }
 
-        #sectionMission {
-            #missionCircle1 {
-                display: none;
+            #sectionResource {
+                article {
+                    h2{
+                        font-size: 30px;
+                    }
+                    p {
+                        width: auto;
+                    }
+                }
+
+                #resourceCircle {
+                    display: none;
+                }
             }
 
-            #missionCircle2 {
-                display: none;
+            #sectionCheck {
+                article {
+                    input {
+                        // width: auto;
+                    }
+                }
             }
-        }
 
-        #footerInfo {
-            ul:nth-child(-n+2) {
-                display: none;
+            #sectionMission {
+                article {
+                    h2{
+                        font-size: 30px;
+                    }
+                    p {
+                        width: auto;
+                    }
+                }
+
+
+                #missionCircle1 {
+                    display: none;
+                }
+
+                #missionCircle2 {
+                    display: none;
+                }
             }
+
         }
+    }
+}
+
+#footerInfo {
+    ul:nth-child(-n+2) {
+        display: none;
     }
 }

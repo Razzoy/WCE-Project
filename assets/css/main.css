@@ -30,22 +30,43 @@ body,
 }
 
 @media only screen and (max-width: 900px) {
-  body {
-    width: 100%;
+  body .container-main hgroup header .hero-container #circle1 {
+    width: 250px;
+    height: 250px;
   }
-  body #sectionResource #resourceCircle {
+  body .container-main hgroup header .hero-container #circle1 h1 {
+    font-size: 36px;
+  }
+  body .container-main hgroup header .hero-container #circle1 #circle2 {
+    width: 150px;
+    height: 150px;
+  }
+  body .container-main #sectionResource article h2 {
+    font-size: 30px;
+  }
+  body .container-main #sectionResource article p {
+    width: auto;
+  }
+  body .container-main #sectionResource #resourceCircle {
     display: none;
   }
-  body #sectionMission #missionCircle1 {
+  body .container-main #sectionMission article h2 {
+    font-size: 30px;
+  }
+  body .container-main #sectionMission article p {
+    width: auto;
+  }
+  body .container-main #sectionMission #missionCircle1 {
     display: none;
   }
-  body #sectionMission #missionCircle2 {
-    display: none;
-  }
-  body #footerInfo ul:nth-child(-n+2) {
+  body .container-main #sectionMission #missionCircle2 {
     display: none;
   }
 }
+#footerInfo ul:nth-child(-n+2) {
+  display: none;
+}
+
 html {
   scroll-behavior: smooth;
 }
