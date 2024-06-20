@@ -14,51 +14,132 @@
         <hgroup>
             <nav>
                 <ul>
-                    <li><a href="#">calculate</a></li>
+                    <li><a href="#sectionCalc">calculate</a></li>
                     <li>/</li>
-                    <li><a href="#">greencheck</a></li>
+                    <li><a href="#sectionCheck">greencheck</a></li>
                     <li>/</li>
-                    <li><a href="#">resources</a></li>
+                    <li><a href="#sectionResource">resources</a></li>
                     <li>/</li>
-                    <li><a href="#">our mission</a></li>
+                    <li><a href="#sectionMission">our mission</a></li>
                 </ul>
             </nav>
             <header>
-                <div class="header-text">
-                    <h1>Web</h1>
-                    <h1>Carbon</h1>
-                    <h1>Emission</h1>
-                    <h1>Project</h1>
+
+                <div class="hero-container">
+                    <span id="circle1">
+                        <h1>Web <br> Carbon <br> Emission <br>
+                            Project</h1>
+                        <span id="circle2">
+                            <h4>Scroll Down to <br>learn more</h4>
+                        </span>
+                    </span>
                 </div>
-                <div class="header-subtext">
-                    <h4>Scroll Down to</h4>
-                    <h4>learn more</h4>
-                </div>
-                <span #circle1></span>
-                <span #circle2></span>
             </header>
         </hgroup>
         <main>
-            <section id="sectionCalc"></section>
-            <section id="sectionCheck">
+            <section id="sectionCalc">
+                <span>
+                    <h2>CALCULATE</h2>
+                </span>
                 <article>
-                    <h3>We love green energy and renewable energy sources. Does your provider?</h3>
+                    <h3>DID YOU KNOW</h3>
+                    <h4>The internet alone consumes 416.2TWh electricity per year</h4>
+                    <p>To begin calculation how much CO2 your website uses enter the URL in the</p>
+                    <p>field below and hit calculate</p>
+                    <input type="text" placeholder="www.mywebsite.com">
+                    <button>CALCULATE</button>
+                </article>
+            </section>
+            <section id="sectionCheck">
+                <span>
+                    <h2>GREEN CHECK</h2>
+                </span>
+                <article>
+                    <h3>We love green energy and renewable <br> energy sources. Does your provider?</h3>
                     <p>Enter a website URL in the field below to look check if the site providers</p>
                     <p>use green and renewable energy sources for hosting</p>
                     <input type="text" placeholder="www.mywebsite.com">
                     <button>BEGIN</button>
                 </article>
             </section>
-            <section id="sectionResource"></section>
-            <section id="sectionMission"></section>
-        </main>
-        <footer class="container-footer"></footer>
-    </div>
-</body>
+            <section id="sectionResource">
+                <span>
+                    <h2>RESOURCES</h2>
+                </span>
+                <article>
+                    <h2>EVERY byte MATTERS</h2>
+                    <p>We work towards a cleaner internet, free from as much carbon emission as possible. There are many
+                        things you can do as a web developer to help. Read more about how you can contribute here</p>
+                    <ul>
+                        <li><a href="https://sustainablewebdesign.org/">Sustainable Web Design</a></li>
+                        <li><a href="https://thegreenfoundation.org/">The Green Foundation</a></li>
+                        <li><a href="https://www.websitecarbon.com/">Website Carbon</a></li>
+                    </ul>
 
-</html>
-<footer class="container-footer"></footer>
-</div>
+                    <span id="resourceCircle"></span>
+
+                </article>
+            </section>
+            <section id="sectionMission">
+                <span>
+                    <h2>MISSION</h2>
+                </span>
+                <article>
+                    <h2>OUR sacred MISSION</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit
+                        urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris.
+                        Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non
+                        suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit
+                        amet. Pellentesque commodo lacus at sodales sodales. Quisque sagittis orci ut diam condimentum,
+                        vel euismod erat placerat. In iaculis arcu eros, eget tempus orci facilisis id. Praesent lorem
+                        orci, mattis non efficitur id, ultricies vel nibh.</p>
+                </article>
+                <span id="missionCircle1"></span>
+                <span id="missionCircle2"></span>
+            </section>
+        </main>
+        <footer class="container-footer">
+            <div id="footerInfo">
+                <ul>
+                    <li>
+                        <h5>Contact Info</h5>
+                    </li>
+                    <li>Supergate 2323</li>
+                    <li>limastreet 23</li>
+                    <li>8239 Denmark</li>
+                    <li>23231212</li>
+                </ul>
+                <ul>
+                    <li>
+                        <h5>Made possible by</h5>
+                    </li>
+                    <li>www.thegreenwebfoundation.org</li>
+                    <li>
+                        <p>Without their tools, <br>publications and research none <br> of this would be possible.</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h5>Newsletter</h5>
+                    </li>
+                    <li>Want to stay in touch?</li>
+                    <form action="">
+                        <input id="email" type="text" placeholder="Enter your email">
+                        <input id="submit" type="submit" value="Submit">
+                    </form>
+                </ul>
+                <span id="footerLogo">
+                    <div class="logoText">
+                        <h2>WCE</h2>
+                        <p>project</p>
+                    </div>
+                    <span id="footerCircle"></span>
+                </span>
+
+            </div>
+
+        </footer>
+    </div>
 </body>
 
 </html>
