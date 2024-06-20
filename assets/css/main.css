@@ -14,6 +14,12 @@ body,
   align-items: center;
 }
 
+body,
+#sectionCheck article h3,
+#sectionCheck article p {
+  overflow-x: hidden;
+}
+
 hgroup {
   background-color: #40A578;
 }
@@ -382,6 +388,17 @@ hgroup header .hero-container #circle2 .header-subtext h4 {
 }
 #sectionResource article ul li a:hover {
   color: #FFF;
+}
+#sectionResource #resourceCircle {
+  background-color: #A5DD9B;
+  border: 5px solid #40A578;
+  border-radius: 50%;
+  position: absolute;
+  top: 120px;
+  left: 60%;
+  width: 1000px;
+  height: 1000px;
+  overflow: hidden;
 }
 
 #sectionMission {

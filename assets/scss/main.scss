@@ -8,6 +8,7 @@ body,
 #sectionCheck article h3,
 #sectionCheck article p {
     @extend %noMarPad;
+    overflow-x: hidden;
 }
 
 hgroup {
@@ -92,7 +93,7 @@ hgroup {
                 justify-content: center;
                 position: absolute;
                 width: 680px;
-                 height: 680px;
+                height: 680px;
                 top: 300px;
                 // left: 350px;
             }
@@ -338,17 +339,18 @@ hgroup {
     }
 
 
-
-    // #resourceCircle {
-    //     background-color: var.$primaryColor;
-    //     border: 5px solid var.$primaryFont;
-    //     border-radius: 50%;
-    //     position: absolute;
-    //     left: 50%;
-    //     width: 590px;
-    //     height: 590px
-    // }
-}
+        #resourceCircle {
+            background-color: var.$secondaryColor;
+            border: 5px solid var.$primaryColor;
+            border-radius: 50%;
+            position: absolute;
+            top: 120px;
+            left: 60%;
+            width: 1000px;
+            height: 1000px;
+            overflow: hidden;
+        }
+    }
 
 
 #sectionMission {
