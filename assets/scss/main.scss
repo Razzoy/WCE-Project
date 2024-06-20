@@ -4,6 +4,9 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
+html{
+    scroll-behavior: smooth
+}
 body,
 #sectionCheck article h3,
 #sectionCheck article p {
@@ -74,8 +77,6 @@ hgroup {
         background-color: var.$primaryColor;
         border: 5px solid var.$primaryFont;
         border-radius: 50%;
-
-
     }
 
     #circle1 {
@@ -117,14 +118,15 @@ hgroup {
     @include mx.sectionColoring(var.$secondaryColor, var.$primaryFont);
     @include mx.flexing(column, 1rem);
     justify-content: center;
-    height: 1440px;
+    height: 940px;
     position: relative;
-    span{
+
+    span {
         @include mx.sectionCircle(var.$secondaryColor, 7px solid var.$primaryColor);
         @include mx.flexing(column, 0);
         @extend %flexAbsoluteCenter;
-        top: -8.8%;
-        h2{
+
+        h2 {
             @include mx.pageFont(400, normal, var.$secondaryFont);
             font-size: 24px;
         }
@@ -183,6 +185,11 @@ hgroup {
             border-radius: 2rem;
             width: 12rem;
             padding: 0.5rem 2rem;
+
+            &:hover {
+                @include mx.sectionColoring(var.$secondaryFont, var.$primaryFont);
+                cursor: pointer
+            }
         }
 
     }
@@ -193,14 +200,15 @@ hgroup {
     @include mx.sectionColoring(var.$primaryColor, var.$primaryFont);
     @include mx.flexing(column, 1rem);
     justify-content: center;
-    height: 1440px;
+    height: 940px;
     position: relative;
-    span{
+
+    span {
         @include mx.sectionCircle(var.$primaryColor, 7px solid var.$secondaryColor);
         @include mx.flexing(column, 0);
         @extend %flexAbsoluteCenter;
-        top: -8.8%;
-        h2{
+
+        h2 {
             @include mx.pageFont(400, normal, var.$secondaryColor);
             font-size: 24px;
         }
@@ -251,11 +259,15 @@ hgroup {
             border-radius: 2rem;
             width: 12rem;
             padding: 0.5rem 2rem;
+
+            &:hover {
+                @include mx.sectionColoring(var.$secondaryFont, var.$primaryFont);
+                cursor: pointer
+            }
         }
 
     }
 }
-
 
 #sectionResource {
     @include mx.pageFont(400, normal, var.$secondaryFont);
@@ -264,20 +276,21 @@ hgroup {
     justify-content: center;
     height: 940px;
     position: relative;
-    span{
+
+    span {
         @include mx.sectionCircle(var.$secondaryColor, 7px solid var.$primaryColor);
         @include mx.flexing(column, 0);
         @extend %flexAbsoluteCenter;
-        top: -13.6%;
-        h2{
+
+        h2 {
             @include mx.pageFont(400, normal, var.$secondaryFont);
             font-size: 24px;
         }
     }
-    
+
     article {
-        @include mx.flexing(column, 4rem);
-        padding-left: 15rem;
+        @include mx.flexing(column, 3rem);
+        padding-left: 12rem;
 
         h2 {
             @extend %noMarPad;
@@ -287,7 +300,7 @@ hgroup {
 
         p {
             font-size: 20px;
-            width: 25%;
+            width: 420px;
         }
 
         ul {
@@ -322,20 +335,21 @@ hgroup {
     justify-content: center;
     height: 940px;
     position: relative;
-    span{
+
+    span {
         @include mx.sectionCircle(var.$primaryColor, 7px solid var.$secondaryColor);
         @include mx.flexing(column, 0);
         @extend %flexAbsoluteCenter;
-        top: -13.6%;
-        h2{
+
+        h2 {
             @include mx.pageFont(400, normal, var.$secondaryColor);
             font-size: 24px;
         }
     }
 
     article {
-        @include mx.flexing(column, 4rem);
-        padding-left: 15rem;
+        @include mx.flexing(column, 3rem);
+        padding-left: 12rem;
 
         h2 {
             @extend %noMarPad;
@@ -345,25 +359,25 @@ hgroup {
 
         p {
             font-size: 20px;
-            width: 25%;
+            width: 520px;
             color: var.$infoFont;
         }
     }
 
 }
+
 .container-footer {
     @include mx.sectionColoring(var.$primaryColor, var.$infoFont);
-    @include mx.gridable(2, 1fr, 0);
     padding: 5rem;
-    height: 350px;
- 
-    #footerInfo {
-        @include mx.gridable(3, 1fr, 2rem);
+    @include mx.flexing(row, 0);
+    @extend %flexAbsoluteCenter;
 
+    #footerInfo {
+        @include mx.flexing(row, 2rem);
 
         ul {
             @extend %noMarPad;
-
+            margin-top: 2rem;
             li,
             h5,
             p {
@@ -390,22 +404,29 @@ hgroup {
                     @include mx.pageFont(400, normal, var.$secondaryFont);
                     border: none;
                     border-radius: 2rem;
-                    width: 12rem;
-                    padding: 0.5rem 2rem;
+                    padding: 0.4rem 1rem;
                 }
-
                 textarea:focus,
                 input:focus {
                     outline: none;
                 }
-            }
 
-            form:nth-child(1) {
-                @include mx.sectionColoring(var.$secondaryColor, var.$secondaryFont);
-            }
-
-            form:nth-child(2) {
-                @include mx.sectionColoring(var.$secondaryColor, var.$secondaryFont);
+                #email{
+                    @include mx.sectionColoring(var.$primaryFont, var.$primaryColor);
+                    width: 12rem;
+                    &::placeholder{
+                        color: var.$primaryColor;
+                    }
+                }
+                #submit{
+                    @include mx.sectionColoring(var.$primaryColor, var.$primaryFont);
+                    border: 1px solid var.$primaryFont;
+                    width: 5rem;
+                    &:hover{
+                        color: var.$infoFont;
+                        cursor: pointer;
+                    }
+                }
             }
 
         }
@@ -418,20 +439,45 @@ hgroup {
             margin-top: -1rem;
             margin-bottom: 1rem;
         }
+
+        #footerLogo {
+            border: 3px solid var.$primaryFont;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            @include mx.flexing(column, 0);
+            @extend %flexAbsoluteCenter;
+            position: relative;
+
+            .logoText {
+
+                p,
+                h2 {
+                    @extend %noMarPad;
+                    @include mx.pageFont(400, normal, var.$infoFont);
+                    font-size: 20px;
+                }
+
+                h2 {
+                    @include mx.pageFont(400, normal, var.$primaryFont);
+                    font-size: 64px;
+                }
+            }
+
+            #footerCircle {
+                background-color: var.$primaryColor;
+                border: 3px solid var.$primaryFont;
+                position: absolute;
+                border-radius: 50%;
+                width: 90px;
+                height: 90px;
+                bottom: -2%;
+                right: -21%;
+            }
+        }
     }
 
 
-    #footerLogo {
 
-        p,
-        h2 {
-            @extend %noMarPad;
-            @include mx.pageFont(400, normal, var.$infoFont);
-            font-size: 20px;
-        }
-        h2 {
-            @include mx.pageFont(400, normal, var.$primaryFont);
-            font-size: 64px;
-        }
-    }
+
 }

@@ -14,13 +14,13 @@
         <hgroup>
             <nav>
                 <ul>
-                    <li><a href="#">calculate</a></li>
+                    <li><a href="#sectionCalc">calculate</a></li>
                     <li>/</li>
-                    <li><a href="#">greencheck</a></li>
+                    <li><a href="#sectionCheck">greencheck</a></li>
                     <li>/</li>
-                    <li><a href="#">resources</a></li>
+                    <li><a href="#sectionResource">resources</a></li>
                     <li>/</li>
-                    <li><a href="#">our mission</a></li>
+                    <li><a href="#sectionMission">our mission</a></li>
                 </ul>
             </nav>
             <header>
@@ -41,7 +41,9 @@
         </hgroup>
         <main>
             <section id="sectionCalc">
-                <span><h2>CALCULATE</h2></span>
+                <span>
+                    <h2>CALCULATE</h2>
+                </span>
                 <article>
                     <h3>DID YOU KNOW</h3>
                     <h4>The internet alone consumes 416.2TWh electricity per year</h4>
@@ -52,9 +54,11 @@
                 </article>
             </section>
             <section id="sectionCheck">
-                <span><h2>GREEN CHECK</h2></span>
+                <span>
+                    <h2>GREEN CHECK</h2>
+                </span>
                 <article>
-                    <h3>We love green energy and renewable energy sources. Does your provider?</h3>
+                    <h3>We love green energy and renewable <br> energy sources. Does your provider?</h3>
                     <p>Enter a website URL in the field below to look check if the site providers</p>
                     <p>use green and renewable energy sources for hosting</p>
                     <input type="text" placeholder="www.mywebsite.com">
@@ -62,7 +66,9 @@
                 </article>
             </section>
             <section id="sectionResource">
-                <span><h2>RESOURCES</h2></span>
+                <span>
+                    <h2>RESOURCES</h2>
+                </span>
                 <article>
                     <h2>EVERY byte MATTERS</h2>
                     <p>We work towards a cleaner internet, free from as much carbon emission as possible. There are many
@@ -75,7 +81,9 @@
                 </article>
             </section>
             <section id="sectionMission">
-                <span><h2>MISSION</h2></span>
+                <span>
+                    <h2>MISSION</h2>
+                </span>
                 <article>
                     <h2>OUR sacred MISSION</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit
@@ -105,7 +113,7 @@
                     </li>
                     <li>www.thegreenwebfoundation.org</li>
                     <li>
-                        <p>Without their tools, publications and research none of this would be possible.</p>
+                        <p>Without their tools, <br>publications and research none <br> of this would be possible.</p>
                     </li>
                 </ul>
                 <ul>
@@ -114,16 +122,22 @@
                     </li>
                     <li>Want to stay in touch?</li>
                     <form action="">
-                        <input type="text" placeholder="Enter your email">
-                        <input type="submit" placeholder="Submit">
+                        <input id="email" type="text" placeholder="Enter your email">
+                        <input id="submit" type="submit" value="Submit">
                     </form>
                 </ul>
+                <span id="footerLogo">
+                    <div class="logoText">
+                        <h2>WCE</h2>
+                        <p>project</p>
+                    </div>
+                    <span id="footerCircle"></span>
+                </span>
+                
             </div>
-            <span id="footerLogo">
-                <h2>WCE</h2>
-                <p>project</p>
-            </span>
+
         </footer>
     </div>
 </body>
+
 </html>

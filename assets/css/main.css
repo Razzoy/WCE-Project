@@ -3,15 +3,19 @@ body,
 #sectionCheck article h3,
 #sectionCheck article p, hgroup header .header-text h1, hgroup #circle2 .header-subtext h4, #sectionCalc article h3, #sectionCalc article h4, #sectionCalc article p, #sectionResource article h2, #sectionResource article ul, #sectionMission article h2, .container-footer #footerInfo ul, .container-footer #footerInfo ul li,
 .container-footer #footerInfo ul h5,
-.container-footer #footerInfo ul p, .container-footer #footerLogo p,
-.container-footer #footerLogo h2 {
+.container-footer #footerInfo ul p, .container-footer #footerInfo #footerLogo .logoText p,
+.container-footer #footerInfo #footerLogo .logoText h2 {
   margin: 0;
   padding: 0;
 }
 
-#sectionCalc span, #sectionCheck span, #sectionResource span, #sectionMission span {
+#sectionCalc span, #sectionCheck span, #sectionResource span, #sectionMission span, .container-footer, .container-footer #footerInfo #footerLogo {
   justify-content: center;
   align-items: center;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 hgroup {
@@ -123,7 +127,7 @@ hgroup #circle2 .header-subtext h4 {
   flex-direction: column;
   gap: 1rem;
   justify-content: center;
-  height: 1440px;
+  height: 940px;
   position: relative;
 }
 #sectionCalc span {
@@ -133,11 +137,11 @@ hgroup #circle2 .header-subtext h4 {
   height: 240px;
   border-radius: 50%;
   position: absolute;
+  top: -13.6%;
   left: 5%;
   display: flex;
   flex-direction: column;
   gap: 0;
-  top: -8.8%;
 }
 #sectionCalc span h2 {
   font-family: "Ubuntu Mono", monospace;
@@ -214,6 +218,11 @@ hgroup #circle2 .header-subtext h4 {
   width: 12rem;
   padding: 0.5rem 2rem;
 }
+#sectionCalc article button:hover {
+  background-color: #006769;
+  color: #E6FF94;
+  cursor: pointer;
+}
 
 #sectionCheck {
   font-family: "Ubuntu Mono", monospace;
@@ -226,7 +235,7 @@ hgroup #circle2 .header-subtext h4 {
   flex-direction: column;
   gap: 1rem;
   justify-content: center;
-  height: 1440px;
+  height: 940px;
   position: relative;
 }
 #sectionCheck span {
@@ -236,11 +245,11 @@ hgroup #circle2 .header-subtext h4 {
   height: 240px;
   border-radius: 50%;
   position: absolute;
+  top: -13.6%;
   left: 5%;
   display: flex;
   flex-direction: column;
   gap: 0;
-  top: -8.8%;
 }
 #sectionCheck span h2 {
   font-family: "Ubuntu Mono", monospace;
@@ -305,7 +314,11 @@ hgroup #circle2 .header-subtext h4 {
   width: 12rem;
   padding: 0.5rem 2rem;
 }
-
+#sectionCheck article button:hover {
+  background-color: #006769;
+  color: #E6FF94;
+  cursor: pointer;
+}
 
 #sectionResource {
   font-family: "Ubuntu Mono", monospace;
@@ -328,11 +341,11 @@ hgroup #circle2 .header-subtext h4 {
   height: 240px;
   border-radius: 50%;
   position: absolute;
+  top: -13.6%;
   left: 5%;
   display: flex;
   flex-direction: column;
   gap: 0;
-  top: -13.6%;
 }
 #sectionResource span h2 {
   font-family: "Ubuntu Mono", monospace;
@@ -344,8 +357,8 @@ hgroup #circle2 .header-subtext h4 {
 #sectionResource article {
   display: flex;
   flex-direction: column;
-  gap: 4rem;
-  padding-left: 15rem;
+  gap: 3rem;
+  padding-left: 12rem;
 }
 #sectionResource article h2 {
   font-family: "Ubuntu Mono", monospace;
@@ -356,7 +369,7 @@ hgroup #circle2 .header-subtext h4 {
 }
 #sectionResource article p {
   font-size: 20px;
-  width: 25%;
+  width: 420px;
 }
 #sectionResource article ul {
   margin-left: 1rem;
@@ -396,11 +409,11 @@ hgroup #circle2 .header-subtext h4 {
   height: 240px;
   border-radius: 50%;
   position: absolute;
+  top: -13.6%;
   left: 5%;
   display: flex;
   flex-direction: column;
   gap: 0;
-  top: -13.6%;
 }
 #sectionMission span h2 {
   font-family: "Ubuntu Mono", monospace;
@@ -412,8 +425,8 @@ hgroup #circle2 .header-subtext h4 {
 #sectionMission article {
   display: flex;
   flex-direction: column;
-  gap: 4rem;
-  padding-left: 15rem;
+  gap: 3rem;
+  padding-left: 12rem;
 }
 #sectionMission article h2 {
   font-family: "Ubuntu Mono", monospace;
@@ -424,25 +437,25 @@ hgroup #circle2 .header-subtext h4 {
 }
 #sectionMission article p {
   font-size: 20px;
-  width: 25%;
+  width: 520px;
   color: #FFF;
 }
 
 .container-footer {
   background-color: #40A578;
   color: #FFF;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0;
   padding: 5rem;
-  height: 350px;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
 }
 .container-footer #footerInfo {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-direction: row;
   gap: 2rem;
 }
 .container-footer #footerInfo ul {
+  margin-top: 2rem;
   text-decoration: none;
   list-style: none;
 }
@@ -470,20 +483,32 @@ hgroup #circle2 .header-subtext h4 {
   color: #006769;
   border: none;
   border-radius: 2rem;
-  width: 12rem;
-  padding: 0.5rem 2rem;
+  padding: 0.4rem 1rem;
 }
 .container-footer #footerInfo ul form textarea:focus,
 .container-footer #footerInfo ul form input:focus {
   outline: none;
 }
-.container-footer #footerInfo ul form:nth-child(1) {
-  background-color: #A5DD9B;
-  color: #006769;
+.container-footer #footerInfo ul form #email {
+  background-color: #E6FF94;
+  color: #40A578;
+  width: 12rem;
 }
-.container-footer #footerInfo ul form:nth-child(2) {
-  background-color: #A5DD9B;
-  color: #006769;
+.container-footer #footerInfo ul form #email::-moz-placeholder {
+  color: #40A578;
+}
+.container-footer #footerInfo ul form #email::placeholder {
+  color: #40A578;
+}
+.container-footer #footerInfo ul form #submit {
+  background-color: #40A578;
+  color: #E6FF94;
+  border: 1px solid #E6FF94;
+  width: 5rem;
+}
+.container-footer #footerInfo ul form #submit:hover {
+  color: #FFF;
+  cursor: pointer;
 }
 .container-footer #footerInfo ul:nth-child(2) li:nth-child(2) {
   margin-bottom: 2rem;
@@ -492,20 +517,38 @@ hgroup #circle2 .header-subtext h4 {
   margin-top: -1rem;
   margin-bottom: 1rem;
 }
-
-.container-footer #footerLogo p,
-.container-footer #footerLogo h2 {
-
+.container-footer #footerInfo #footerLogo {
+  border: 3px solid #E6FF94;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  position: relative;
+}
+.container-footer #footerInfo #footerLogo .logoText p,
+.container-footer #footerInfo #footerLogo .logoText h2 {
   font-family: "Ubuntu Mono", monospace;
   font-weight: 400;
   font-style: normal;
   color: #FFF;
   font-size: 20px;
 }
-.container-footer #footerLogo h2 {
+.container-footer #footerInfo #footerLogo .logoText h2 {
   font-family: "Ubuntu Mono", monospace;
   font-weight: 400;
   font-style: normal;
   color: #E6FF94;
   font-size: 64px;
+}
+.container-footer #footerInfo #footerLogo #footerCircle {
+  background-color: #40A578;
+  border: 3px solid #E6FF94;
+  position: absolute;
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  bottom: -2%;
+  right: -21%;
 }/*# sourceMappingURL=main.css.map */
