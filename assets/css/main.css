@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-
-body, #sectionCheck article h3, #sectionCheck article p, hgroup header .header-text h1, hgroup header .header-subtext h4 {
+body,
+#sectionCheck article h3,
+#sectionCheck article p, hgroup header .header-text h1, hgroup header .header-subtext h4, #sectionCalc article h3, #sectionCalc article h4, #sectionCalc article p, #sectionResource article h2, #sectionResource article ul, #sectionMission article h2, .container-footer #footerInfo ul, .container-footer #footerInfo ul li,
+.container-footer #footerInfo ul h5,
+.container-footer #footerInfo ul p, .container-footer #footerLogo p, .container-footer #footerLogo h2 {
   margin: 0;
   padding: 0;
 }
@@ -91,6 +94,88 @@ hgroup span #circle1 {
   width: 760px;
   height: 760px;
 }
+#sectionCalc {
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  color: #E6FF94;
+  background-color: #A5DD9B;
+  color: #E6FF94;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  height: 1440px;
+}
+#sectionCalc article {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  align-items: center;
+}
+#sectionCalc article h3 {
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  color: #40A578;
+  margin-bottom: 3rem;
+  font-size: 48px;
+}
+#sectionCalc article h4 {
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  color: #006769;
+  margin-bottom: 3rem;
+  font-size: 36px;
+}
+#sectionCalc article p {
+  font-size: 20px;
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  color: #006769;
+}
+#sectionCalc article input {
+  background-color: #40A578;
+  color: #A5DD9B;
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  color: #FFF;
+  border: none;
+  border-radius: 2rem;
+  font-size: 20px;
+  margin-top: 4rem;
+  width: 40rem;
+  padding: 1rem 2rem;
+}
+#sectionCalc article input::-moz-placeholder {
+  font-size: 20px;
+  color: #FFF;
+}
+#sectionCalc article input::placeholder {
+  font-size: 20px;
+  color: #FFF;
+}
+#sectionCalc article textarea:focus,
+#sectionCalc article input:focus {
+  outline: none;
+}
+#sectionCalc article button {
+  background-color: #40A578;
+  color: #006769;
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  color: #FFF;
+  margin-top: 2rem;
+  border: none;
+  border-radius: 2rem;
+  width: 12rem;
+  padding: 0.5rem 2rem;
+}
+
 #sectionCheck {
   font-family: "Ubuntu Mono", monospace;
   font-weight: 400;
@@ -159,4 +244,162 @@ hgroup span #circle1 {
   border-radius: 2rem;
   width: 12rem;
   padding: 0.5rem 2rem;
+}
+
+#sectionResource {
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  color: #006769;
+  background-color: #A5DD9B;
+  color: #006769;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  height: 940px;
+}
+#sectionResource article {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding-left: 15rem;
+}
+#sectionResource article h2 {
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  color: #006769;
+  font-size: 64px;
+}
+#sectionResource article p {
+  font-size: 20px;
+  width: 25%;
+}
+#sectionResource article ul {
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+#sectionResource article ul li:hover {
+  color: #FFF;
+}
+#sectionResource article ul li a {
+  font-size: 20px;
+  color: #006769;
+}
+#sectionResource article ul li a:hover {
+  color: #FFF;
+}
+
+#sectionMission {
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  color: #E6FF94;
+  background-color: #40A578;
+  color: #006769;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  height: 940px;
+}
+#sectionMission article {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding-left: 15rem;
+}
+#sectionMission article h2 {
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  color: #E6FF94;
+  font-size: 64px;
+}
+#sectionMission article p {
+  font-size: 20px;
+  width: 25%;
+  color: #FFF;
+}
+
+.container-footer {
+  background-color: #40A578;
+  color: #FFF;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+  padding: 5rem;
+  height: 350px;
+}
+.container-footer #footerInfo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.container-footer #footerInfo ul {
+  text-decoration: none;
+  list-style: none;
+}
+.container-footer #footerInfo ul li,
+.container-footer #footerInfo ul h5,
+.container-footer #footerInfo ul p {
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  color: #FFF;
+  font-size: 20px;
+}
+.container-footer #footerInfo ul li h5 {
+  margin-bottom: 2rem;
+}
+.container-footer #footerInfo ul form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.container-footer #footerInfo ul form input {
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  color: #006769;
+  border: none;
+  border-radius: 2rem;
+  width: 12rem;
+  padding: 0.5rem 2rem;
+}
+.container-footer #footerInfo ul form textarea:focus,
+.container-footer #footerInfo ul form input:focus {
+  outline: none;
+}
+.container-footer #footerInfo ul form:nth-child(1) {
+  background-color: #A5DD9B;
+  color: #006769;
+}
+.container-footer #footerInfo ul form:nth-child(2) {
+  background-color: #A5DD9B;
+  color: #006769;
+}
+.container-footer #footerInfo ul:nth-child(2) li:nth-child(2) {
+  margin-bottom: 2rem;
+}
+.container-footer #footerInfo ul:nth-child(3) li:nth-child(2) {
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+}
+.container-footer #footerLogo p, .container-footer #footerLogo h2 {
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  color: #FFF;
+  font-size: 20px;
+}
+.container-footer #footerLogo h2 {
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  color: #E6FF94;
+  font-size: 64px;
 }/*# sourceMappingURL=main.css.map */
