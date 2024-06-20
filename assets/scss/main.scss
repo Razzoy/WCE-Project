@@ -1,6 +1,7 @@
 @use "./helpers/_placeholders";
 @use "./helpers/_variables" as var;
 @use "./helpers/_mixins" as mx;
+@import "query/mobile-queries";
 
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
