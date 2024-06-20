@@ -14,15 +14,15 @@ body,
   align-items: center;
 }
 
-
 html {
   scroll-behavior: smooth;
 }
+
 body,
 #sectionCheck article h3,
 #sectionCheck article p {
   overflow-x: hidden;
-
+}
 
 hgroup {
   background-color: #40A578;
@@ -60,6 +60,26 @@ hgroup nav ul li a {
 hgroup nav ul li a:hover {
   color: #FFF;
 }
+hgroup span {
+  padding: 5vw;
+  background-color: #40A578;
+  border: 5px solid #E6FF94;
+  border-radius: 50%;
+}
+hgroup #circle1 {
+  position: absolute;
+  width: 650px;
+  height: 650px;
+  top: 300px;
+  left: 300px;
+}
+hgroup #circle2 {
+  display: flex;
+  justify-content: center;
+  height: 1390px;
+  position: relative;
+  z-index: 1;
+}
 hgroup header {
   display: flex;
   justify-content: center;
@@ -71,10 +91,6 @@ hgroup header .hero-container {
   display: flex;
   justify-content: center;
   width: 1600px;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
 }
 hgroup header .hero-container .header-text {
   display: flex;
@@ -170,6 +186,7 @@ hgroup header .hero-container #circle2 .header-subtext h4 {
   flex-direction: column;
   gap: 0;
   align-items: center;
+  position: relative;
 }
 #sectionCalc article h3 {
   font-family: "Ubuntu Mono", monospace;
@@ -278,6 +295,7 @@ hgroup header .hero-container #circle2 .header-subtext h4 {
   flex-direction: column;
   gap: 0;
   align-items: center;
+  position: relative;
 }
 #sectionCheck article h3 {
   font-family: "Ubuntu Mono", monospace;
@@ -411,7 +429,6 @@ hgroup header .hero-container #circle2 .header-subtext h4 {
   left: 60%;
   width: 1000px;
   height: 1000px;
-  overflow: hidden;
 }
 
 #sectionMission {

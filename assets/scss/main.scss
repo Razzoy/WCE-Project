@@ -4,9 +4,10 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
-html{
+html {
     scroll-behavior: smooth
 }
+
 body,
 #sectionCheck article h3,
 #sectionCheck article p {
@@ -68,16 +69,19 @@ hgroup {
         height: 1390px;
         position: relative;
         z-index: 1;
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+        height: 1390px;
+        position: relative;
+        z-index: 1;
 
         .hero-container {
-            // position: relative;
             display: flex;
             justify-content: center;
             width: 1600px;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
 
             .header-text {
                 display: flex;
@@ -96,9 +100,6 @@ hgroup {
                     @extend %noMarPad;
                 }
             }
-
-
-
 
             span {
                 background-color: var.$primaryColor;
@@ -142,11 +143,12 @@ hgroup {
             }
         }
     }
-
-
-
-
 }
+
+
+
+
+
 
 #sectionCalc {
     @include mx.pageFont(400, normal, var.$primaryFont);
@@ -170,6 +172,7 @@ hgroup {
     article {
         @include mx.flexing(column, 0);
         align-items: center;
+        position: relative;
 
         h3 {
             @include mx.pageFont(400, normal, var.$primaryColor);
@@ -252,6 +255,7 @@ hgroup {
     article {
         @include mx.flexing(column, 0);
         align-items: center;
+        position: relative;
 
         h3 {
             @include mx.pageFont(400, normal, var.$primaryFont);
@@ -362,18 +366,18 @@ hgroup {
     }
 
 
-        #resourceCircle {
-            background-color: var.$secondaryColor;
-            border: 5px solid var.$primaryColor;
-            border-radius: 50%;
-            position: absolute;
-            top: 120px;
-            left: 60%;
-            width: 1000px;
-            height: 1000px;
-            overflow: hidden;
-        }
+    #resourceCircle {
+        background-color: var.$secondaryColor;
+        border: 5px solid var.$primaryColor;
+        border-radius: 50%;
+        position: absolute;
+        top: 120px;
+        left: 60%;
+        width: 1000px;
+        height: 1000px;
+
     }
+}
 
 
 #sectionMission {
@@ -412,7 +416,7 @@ hgroup {
         }
     }
 
-    #missionCircle1{
+    #missionCircle1 {
         background-color: var.$primaryColor;
         border: 5px solid var.$primaryFont;
         border-radius: 50%;
@@ -423,7 +427,8 @@ hgroup {
         height: 700px;
         overflow: hidden;
     }
-    #missionCircle2{
+
+    #missionCircle2 {
         background-color: var.$primaryColor;
         border: 5px solid var.$primaryFont;
         border-radius: 50%;
@@ -449,6 +454,7 @@ hgroup {
         ul {
             @extend %noMarPad;
             margin-top: 2rem;
+
             li,
             h5,
             p {
@@ -477,23 +483,27 @@ hgroup {
                     border-radius: 2rem;
                     padding: 0.4rem 1rem;
                 }
+
                 textarea:focus,
                 input:focus {
                     outline: none;
                 }
 
-                #email{
+                #email {
                     @include mx.sectionColoring(var.$primaryFont, var.$primaryColor);
                     width: 12rem;
-                    &::placeholder{
+
+                    &::placeholder {
                         color: var.$primaryColor;
                     }
                 }
-                #submit{
+
+                #submit {
                     @include mx.sectionColoring(var.$primaryColor, var.$primaryFont);
                     border: 1px solid var.$primaryFont;
                     width: 5rem;
-                    &:hover{
+
+                    &:hover {
                         color: var.$infoFont;
                         cursor: pointer;
                     }
