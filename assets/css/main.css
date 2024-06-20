@@ -58,7 +58,6 @@ hgroup header {
   z-index: 1;
 }
 hgroup header .hero-container {
-  position: relative;
   display: flex;
   justify-content: center;
   width: 1600px;
@@ -72,8 +71,8 @@ hgroup header .hero-container .header-text {
   flex-direction: column;
   color: #E6FF94;
   position: absolute;
-  top: 230px;
-  left: 190px;
+  top: 250px;
+  left: 250px;
   height: 500px;
   width: 592px;
   z-index: 5;
@@ -91,20 +90,21 @@ hgroup header .hero-container span {
   border-radius: 50%;
 }
 hgroup header .hero-container #circle1 {
+  display: flex;
+  justify-content: center;
   position: absolute;
-  width: 650px;
-  height: 650px;
+  width: 680px;
+  height: 680px;
   top: 300px;
-  left: 300px;
 }
 hgroup header .hero-container #circle2 {
   display: flex;
   position: absolute;
   justify-content: center;
-  width: 200px;
-  height: 200px;
-  top: 750px;
-  left: 890px;
+  width: 300px;
+  height: 300px;
+  top: 680px;
+  left: 850px;
 }
 hgroup header .hero-container #circle2 .header-subtext {
   display: flex;
