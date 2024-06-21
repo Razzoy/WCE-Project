@@ -123,7 +123,6 @@ hgroup {
         @include mx.sectionCircle(var.$secondaryColor, 7px solid var.$primaryColor);
         @include mx.flexing(column, 0);
         @extend %flexAbsoluteCenter;
-
         h2 {
             @include mx.pageFont(400, normal, var.$secondaryFont);
             font-size: 24px;
