@@ -2,6 +2,25 @@
 @use "../helpers/_variables" as var;
 @use "../helpers/_mixins" as mx;
 
+@media only screen and (max-width: 1200px) {
+    .container-main {
+        #sectionResource {
+            #resourceCircle {
+                display: none;
+            }
+        }
+        #sectionMission{
+            #missionCircle1 {
+                display: none;
+            }
+
+            #missionCircle2 {
+                display: none;
+            }
+        }
+    }
+}
+
 
 @media only screen and (max-width: 900px) {
     body {
@@ -9,6 +28,13 @@
 
         .container-main {
             hgroup {
+                nav {
+                    ul {
+                        @include mx.flexing(row, 5px);
+                        padding: 0;
+                    }
+                }
+
                 header {
                     .hero-container {
                         #circle1 {
@@ -36,11 +62,23 @@
                 }
             }
 
+
+            #sectionCheck {
+                article {
+                    input {
+                        // width: auto;
+                    }
+                }
+            }
+
             #sectionResource {
                 article {
-                    h2{
+                    padding: 0;
+
+                    h2 {
                         font-size: 30px;
                     }
+
                     p {
                         width: auto;
                     }
@@ -51,19 +89,14 @@
                 }
             }
 
-            #sectionCheck {
-                article {
-                    input {
-                        // width: auto;
-                    }
-                }
-            }
-
             #sectionMission {
                 article {
-                    h2{
+                    padding: 0;
+
+                    h2 {
                         font-size: 30px;
                     }
+
                     p {
                         width: auto;
                     }
@@ -79,12 +112,35 @@
                 }
             }
 
-        }
-    }
-}
+            .container-footer {
+                #footerInfo {
+                    ul:nth-child(-n+2) {
+                        display: none;
+                    }
 
-#footerInfo {
-    ul:nth-child(-n+2) {
-        display: none;
+                    #footerLogo {
+                        border: 3px solid #E6FF94;
+                        width: 7rem;
+                        height: 7rem;
+                        border-radius: 50%;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 0;
+                        position: relative;
+
+                        #footerCircle {
+                            background-color: #40A578;
+                            border: 3px solid #E6FF94;
+                            position: absolute;
+                            border-radius: 50%;
+                            width: 3rem;
+                            height: 3rem;
+                            bottom: -11%;
+                            right: 1rem;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
