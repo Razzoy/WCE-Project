@@ -1,4 +1,4 @@
-//   Fetch domain greencheck
+// Fetch domain greencheck
 
 const greencheckResult = document.querySelector('#greencheckResult');
 
@@ -18,9 +18,15 @@ async function getGreenCheckData() {
 
 function displayGreenCheck(data) {
     const dataResult = document.createElement('div');
-    dataResult.innerText = JSON.stringify(data);
+    if (data === true) {
+        dataResult.innerText = "This provider uses green and renewable energy.";
+    } else {
+        dataResult.innerText = "This provider does not use green and renewable energy.";
+    }
     greencheckResult.appendChild(dataResult);
 }
+
+
 
 
 //   Fetch IP to CO2 Intensity API 
@@ -43,6 +49,6 @@ async function getIpIntensityData() {
 
 function displayIpIntensity(data) {
     const dataResult = document.createElement('div');
-    dataResult.innerText = ('Intensity of this IP is' + ' '+ JSON.stringify(data) + 'grams per kilowatt-hour');
+    dataResult.innerText = ('Intensity of this IP is' + ' ' + JSON.stringify(data) + 'grams per kilowatt-hour');
     ipintensityResult.appendChild(dataResult);
 }
