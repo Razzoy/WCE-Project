@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Carbon Emission Project</title>
     <link rel="stylesheet" href="assets/css/main.css">
-    <script src="assets/js/page.js" type="module" defer></script>
+    <script src="./assets/js/page.js" type="module" defer></script>
 </head>
 
 <body>
@@ -46,8 +46,9 @@
                     <h4>The internet alone consumes 416.2TWh electricity per year</h4>
                     <p>To begin calculation how much CO2 your website uses enter the URL in the</p>
                     <p>field below and hit calculate</p>
+                    <div id="ipintensityResult"></div>
                     <input type="text" placeholder="www.mywebsite.com">
-                    <button>CALCULATE</button>
+                    <button id="#ipintensityButton" onclick='getIpIntensityData()'>CALCULATE</button>
                 </article>
             </section>
             <section id="sectionCheck">
@@ -58,8 +59,9 @@
                     <h3>We love green energy and renewable <br> energy sources. Does your provider?</h3>
                     <p>Enter a website URL in the field below to look check if the site providers</p>
                     <p>use green and renewable energy sources for hosting</p>
+                    <div id="greencheckResult"></div>
                     <input type="text" placeholder="www.mywebsite.com">
-                    <button>BEGIN</button>
+                    <button onclick="getGreenCheckData()">BEGIN</button>
                 </article>
             </section>
             <section id="sectionResource">

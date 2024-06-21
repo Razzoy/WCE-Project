@@ -359,6 +359,11 @@ hgroup header .hero-container #circle1 #circle2 h4 {
 #sectionCalc article input:focus {
   outline: none;
 }
+#sectionCalc article #ipintensityResult {
+  display: flex;
+  font-size: 24px;
+  padding-top: 2rem;
+}
 #sectionCalc article button {
   background-color: #40A578;
   color: #006769;
@@ -485,6 +490,11 @@ hgroup header .hero-container #circle1 #circle2 h4 {
   background-color: #006769;
   color: #E6FF94;
   cursor: pointer;
+}
+#sectionCheck article #greencheckResult {
+  display: flex;
+  font-size: 24px;
+  padding-top: 2rem;
 }
 
 #sectionResource {
