@@ -4,12 +4,36 @@
 
 @media only screen and (max-width: 1200px) {
     .container-main {
-        #sectionResource {
-            #resourceCircle {
-                display: none;
+        hgroup {
+            header {
+                .hero-container {
+                    #circle1 {
+                        width: 300px;
+                        height: 300px;
+
+                        h1 {
+                            font-size: 36px;
+                            left: 0;
+                            right: 0;
+                        }
+
+                        #circle2 {
+                            width: 130px;
+                            height: 130px;
+                            bottom: -25%;
+                            right: 0;
+                            h4{
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
             }
         }
-        #sectionMission{
+
+        #sectionResource {}
+
+        #sectionMission {
             #missionCircle1 {
                 display: none;
             }
@@ -36,18 +60,19 @@
                 }
 
                 header {
+                    height: 500px;
                     .hero-container {
+                        margin-bottom: 50px;
                         #circle1 {
-                            width: 250px;
-                            height: 250px;
 
                             h1 {
                                 font-size: 36px;
+                                left: 20%;
+                                top: 18%;
                             }
 
                             #circle2 {
-                                width: 150px;
-                                height: 150px;
+
                             }
                         }
                     }
@@ -55,23 +80,32 @@
             }
 
             #sectionCalc {
+                padding: 0 1rem;
+
                 article {
+                    h3{
+                        font-size: 20px;
+                    }
                     input {
-                        // width: auto;
+                        width: auto;
                     }
                 }
             }
 
 
             #sectionCheck {
+                padding: 0 1rem;
+
                 article {
                     input {
-                        // width: auto;
+                        width: auto;
                     }
                 }
             }
 
             #sectionResource {
+                padding: 0 1rem;
+
                 article {
                     padding: 0;
 
@@ -84,12 +118,14 @@
                     }
                 }
 
-                #resourceCircle {
+                #resourceCircleBig {
                     display: none;
                 }
             }
 
             #sectionMission {
+                padding: 0 1rem;
+
                 article {
                     padding: 0;
 
@@ -113,7 +149,12 @@
             }
 
             .container-footer {
+                padding: 0;
+                padding-bottom: 2rem;
+
                 #footerInfo {
+                    gap: 1vw;
+
                     ul:nth-child(-n+2) {
                         display: none;
                     }
@@ -128,15 +169,21 @@
                         gap: 0;
                         position: relative;
 
+                        .logoText {
+                            h2 {
+                                font-size: 34px;
+                            }
+                        }
+
                         #footerCircle {
                             background-color: #40A578;
                             border: 3px solid #E6FF94;
                             position: absolute;
                             border-radius: 50%;
-                            width: 3rem;
-                            height: 3rem;
-                            bottom: -11%;
-                            right: 1rem;
+                            width: 2rem;
+                            height: 2rem;
+                            bottom: -13%;
+                            right: -1%;
                         }
                     }
                 }
