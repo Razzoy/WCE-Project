@@ -107,11 +107,6 @@ hgroup {
     }
 }
 
-
-
-
-
-
 #sectionCalc {
     @include mx.pageFont(400, normal, var.$primaryFont);
     @include mx.sectionColoring(var.$secondaryColor, var.$primaryFont);
@@ -120,8 +115,9 @@ hgroup {
     height: 940px;
     position: relative;
 
-    span {
+    #calcCircle {
         @include mx.sectionCircle(var.$secondaryColor, 7px solid var.$primaryColor);
+        @include mx.sectionCircleHover(var.$infoFont, var.$primaryColor, 7px solid var.$secondaryColor);
         @include mx.flexing(column, 0);
         @extend %flexAbsoluteCenter;
 
@@ -168,7 +164,7 @@ hgroup {
 
             &::placeholder {
                 font-size: 20px;
-                color: var.$infoFont;
+                color: var.$infoTransparent
             }
         }
 
@@ -203,8 +199,9 @@ hgroup {
     height: 940px;
     position: relative;
 
-    span {
+    #checkCircle {
         @include mx.sectionCircle(var.$primaryColor, 7px solid var.$secondaryColor);
+        @include mx.sectionCircleHover(var.$infoFont, var.$secondaryColor, 7px solid var.$primaryColor);
         @include mx.flexing(column, 0);
         @extend %flexAbsoluteCenter;
 
@@ -233,7 +230,7 @@ hgroup {
 
         input {
             @include mx.sectionColoring(var.$secondaryColor, var.$secondaryFont);
-            @include mx.pageFont(400, normal, var.$secondaryFont);
+            @include mx.pageFont(400, normal, var.$primaryColor);
             border: none;
             border-radius: 2rem;
             font-size: 20px;
@@ -243,7 +240,7 @@ hgroup {
 
             &::placeholder {
                 font-size: 20px;
-                color: var.$primaryColor;
+                color: var.$primaryColorTransparent;
             }
         }
 
@@ -278,8 +275,9 @@ hgroup {
     height: 940px;
     position: relative;
 
-    span {
+    #resourceCircle {
         @include mx.sectionCircle(var.$secondaryColor, 7px solid var.$primaryColor);
+        @include mx.sectionCircleHover(var.$infoFont, var.$primaryColor, 7px solid var.$secondaryColor);
         @include mx.flexing(column, 0);
         @extend %flexAbsoluteCenter;
 
@@ -328,7 +326,7 @@ hgroup {
     }
 
 
-    #resourceCircle {
+    #resourceCircleBig {
         background-color: var.$secondaryColor;
         border: 5px solid var.$primaryColor;
         border-radius: 50%;
@@ -337,10 +335,8 @@ hgroup {
         left: 60%;
         width: 1000px;
         height: 1000px;
-
     }
 }
-
 
 #sectionMission {
     @include mx.pageFont(400, normal, var.$primaryFont);
@@ -350,8 +346,9 @@ hgroup {
     height: 940px;
     position: relative;
 
-    span {
+    #missionCircle {
         @include mx.sectionCircle(var.$primaryColor, 7px solid var.$secondaryColor);
+        @include mx.sectionCircleHover(var.$infoFont, var.$secondaryColor, 7px solid var.$primaryColor);
         @include mx.flexing(column, 0);
         @extend %flexAbsoluteCenter;
 
@@ -407,11 +404,10 @@ hgroup {
 .container-footer {
     @include mx.sectionColoring(var.$primaryColor, var.$infoFont);
     padding: 5rem;
-    @include mx.flexing(row, 0);
-    @extend %flexAbsoluteCenter;
 
     #footerInfo {
         @include mx.flexing(row, 2rem);
+        justify-content: space-evenly;
 
         ul {
             @extend %noMarPad;
@@ -485,12 +481,13 @@ hgroup {
 
         #footerLogo {
             border: 3px solid var.$primaryFont;
-            width: 200px;
-            height: 200px;
+            width: 10.5vw;
+            height: 10.5vw;
             border-radius: 50%;
             @include mx.flexing(column, 0);
             @extend %flexAbsoluteCenter;
             position: relative;
+            margin-top: 2rem;
 
             .logoText {
 
@@ -512,8 +509,8 @@ hgroup {
                 border: 3px solid var.$primaryFont;
                 position: absolute;
                 border-radius: 50%;
-                width: 90px;
-                height: 90px;
+                width: 4.7vw;
+                height: 4.7vw;
                 bottom: -2%;
                 right: -21%;
             }
