@@ -25,10 +25,26 @@
 @mixin sectionCircle($background, $border) {
     background-color: $background;
     border: $border;
-    width: 240px;
-    height: 240px;
+    width: 12.5vw;
+    height: 12.5vw;
     border-radius: 50%;
     position: absolute;
-    top: -13.6%;
-    left: 5%;
+    top: -12vh;
+    left: 5vw;
+    z-index: 5;
+    h2{
+        @extend %noMarPad;
+        text-align: center;
+    }
+}
+
+@mixin sectionCircleHover($color, $background, $border) {
+    &:hover {
+        h2{
+            color: $color;
+        }
+        cursor: pointer;
+        background-color: $background;
+        border: $border;
+    }
 }

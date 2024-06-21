@@ -1,15 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 body,
 #sectionCheck article h3,
-#sectionCheck article p, .container-main hgroup header .hero-container #circle1 h1, .container-main hgroup header .hero-container #circle1 #circle2 h4, .container-main #sectionCalc article h3, .container-main #sectionCalc article h4, .container-main #sectionCalc article p, .container-main #sectionCheck article h3, .container-main #sectionCheck article p, .container-main #sectionResource article h2, .container-main #sectionResource article ul, .container-main #sectionMission article h2, .container-main .container-footer #footerInfo ul, .container-main .container-footer #footerInfo ul li,
-.container-main .container-footer #footerInfo ul h5,
-.container-main .container-footer #footerInfo ul p, .container-main .container-footer #footerInfo #footerLogo .logoText p,
-.container-main .container-footer #footerInfo #footerLogo .logoText h2 {
+
+#sectionCheck article p, hgroup header .hero-container #circle1 h1, hgroup header .hero-container #circle1 #circle2 h4, #sectionCalc #calcCircle h2, #sectionCalc article h3, #sectionCalc article h4, #sectionCalc article p, #sectionCheck #checkCircle h2, #sectionResource #resourceCircle h2, #sectionResource article h2, #sectionResource article ul, #sectionMission #missionCircle h2, #sectionMission article h2, .container-footer #footerInfo ul, .container-footer #footerInfo ul li,
+.container-footer #footerInfo ul h5,
+.container-footer #footerInfo ul p, .container-footer #footerInfo #footerLogo .logoText p,
+.container-footer #footerInfo #footerLogo .logoText h2 {
   margin: 0;
   padding: 0;
 }
 
-.container-main #sectionCalc span, .container-main #sectionCheck span, .container-main #sectionResource span, .container-main #sectionMission span, .container-main .container-footer, .container-main .container-footer #footerInfo #footerLogo {
+#sectionCalc #calcCircle, #sectionCheck #checkCircle, #sectionResource #resourceCircle, #sectionMission #missionCircle, .container-footer #footerInfo #footerLogo {
   justify-content: center;
   align-items: center;
 }
@@ -227,20 +228,34 @@ body,
   height: 940px;
   position: relative;
 }
-.container-main #sectionCalc span {
+
+#sectionCalc #calcCircle {
   background-color: #A5DD9B;
   border: 7px solid #40A578;
-  width: 240px;
-  height: 240px;
+  width: 12.5vw;
+  height: 12.5vw;
   border-radius: 50%;
   position: absolute;
-  top: -13.6%;
-  left: 5%;
+  top: -12vh;
+  left: 5vw;
+  z-index: 5;
   display: flex;
   flex-direction: column;
   gap: 0;
 }
-.container-main #sectionCalc span h2 {
+
+#sectionCalc #calcCircle h2 {
+  text-align: center;
+}
+#sectionCalc #calcCircle:hover {
+  cursor: pointer;
+  background-color: #40A578;
+  border: 7px solid #A5DD9B;
+}
+#sectionCalc #calcCircle:hover h2 {
+  color: #FFF;
+}
+#sectionCalc #calcCircle h2 {
   font-family: "Ubuntu Mono", monospace;
   font-weight: 400;
   font-style: normal;
@@ -293,11 +308,11 @@ body,
 }
 .container-main #sectionCalc article input::-moz-placeholder {
   font-size: 20px;
-  color: #FFF;
+  color: rgba(255, 255, 255, 0.6666666667);
 }
 .container-main #sectionCalc article input::placeholder {
   font-size: 20px;
-  color: #FFF;
+  color: rgba(255, 255, 255, 0.6666666667);
 }
 .container-main #sectionCalc article textarea:focus,
 .container-main #sectionCalc article input:focus {
@@ -335,20 +350,34 @@ body,
   height: 940px;
   position: relative;
 }
-.container-main #sectionCheck span {
+
+#sectionCheck #checkCircle {
   background-color: #40A578;
   border: 7px solid #A5DD9B;
-  width: 240px;
-  height: 240px;
+  width: 12.5vw;
+  height: 12.5vw;
   border-radius: 50%;
   position: absolute;
-  top: -13.6%;
-  left: 5%;
+  top: -12vh;
+  left: 5vw;
+  z-index: 5;
   display: flex;
   flex-direction: column;
   gap: 0;
 }
-.container-main #sectionCheck span h2 {
+
+#sectionCheck #checkCircle h2 {
+  text-align: center;
+}
+#sectionCheck #checkCircle:hover {
+  cursor: pointer;
+  background-color: #A5DD9B;
+  border: 7px solid #40A578;
+}
+#sectionCheck #checkCircle:hover h2 {
+  color: #FFF;
+}
+#sectionCheck #checkCircle h2 {
   font-family: "Ubuntu Mono", monospace;
   font-weight: 400;
   font-style: normal;
@@ -379,7 +408,7 @@ body,
   font-family: "Ubuntu Mono", monospace;
   font-weight: 400;
   font-style: normal;
-  color: #006769;
+  color: #40A578;
   border: none;
   border-radius: 2rem;
   font-size: 20px;
@@ -389,11 +418,11 @@ body,
 }
 .container-main #sectionCheck article input::-moz-placeholder {
   font-size: 20px;
-  color: #40A578;
+  color: rgba(64, 165, 120, 0.6666666667);
 }
 .container-main #sectionCheck article input::placeholder {
   font-size: 20px;
-  color: #40A578;
+  color: rgba(64, 165, 120, 0.6666666667);
 }
 .container-main #sectionCheck article textarea:focus,
 .container-main #sectionCheck article input:focus {
@@ -431,20 +460,34 @@ body,
   height: 940px;
   position: relative;
 }
-.container-main #sectionResource span {
+
+#sectionResource #resourceCircle {
   background-color: #A5DD9B;
   border: 7px solid #40A578;
-  width: 240px;
-  height: 240px;
+  width: 12.5vw;
+  height: 12.5vw;
   border-radius: 50%;
   position: absolute;
-  top: -13.6%;
-  left: 5%;
+  top: -12vh;
+  left: 5vw;
+  z-index: 5;
   display: flex;
   flex-direction: column;
   gap: 0;
 }
-.container-main #sectionResource span h2 {
+
+#sectionResource #resourceCircle h2 {
+  text-align: center;
+}
+#sectionResource #resourceCircle:hover {
+  cursor: pointer;
+  background-color: #40A578;
+  border: 7px solid #A5DD9B;
+}
+#sectionResource #resourceCircle:hover h2 {
+  color: #FFF;
+}
+#sectionResource #resourceCircle h2 {
   font-family: "Ubuntu Mono", monospace;
   font-weight: 400;
   font-style: normal;
@@ -484,7 +527,8 @@ body,
 .container-main #sectionResource article ul li a:hover {
   color: #FFF;
 }
-.container-main #sectionResource #resourceCircle {
+
+#sectionResource #resourceCircleBig {
   background-color: #A5DD9B;
   border: 5px solid #40A578;
   border-radius: 50%;
@@ -508,20 +552,33 @@ body,
   height: 940px;
   position: relative;
 }
-.container-main #sectionMission span {
+#sectionMission #missionCircle {
   background-color: #40A578;
   border: 7px solid #A5DD9B;
-  width: 240px;
-  height: 240px;
+  width: 12.5vw;
+  height: 12.5vw;
   border-radius: 50%;
   position: absolute;
-  top: -13.6%;
-  left: 5%;
+  top: -12vh;
+  left: 5vw;
+  z-index: 5;
   display: flex;
   flex-direction: column;
   gap: 0;
 }
-.container-main #sectionMission span h2 {
+
+#sectionMission #missionCircle h2 {
+  text-align: center;
+}
+#sectionMission #missionCircle:hover {
+  cursor: pointer;
+  background-color: #A5DD9B;
+  border: 7px solid #40A578;
+}
+#sectionMission #missionCircle:hover h2 {
+  color: #FFF;
+}
+#sectionMission #missionCircle h2 {
   font-family: "Ubuntu Mono", monospace;
   font-weight: 400;
   font-style: normal;
@@ -572,14 +629,12 @@ body,
   background-color: #40A578;
   color: #FFF;
   padding: 5rem;
-  display: flex;
-  flex-direction: row;
-  gap: 0;
 }
 .container-main .container-footer #footerInfo {
   display: flex;
   flex-direction: row;
   gap: 2rem;
+  justify-content: space-evenly;
 }
 .container-main .container-footer #footerInfo ul {
   margin-top: 2rem;
@@ -646,13 +701,14 @@ body,
 }
 .container-main .container-footer #footerInfo #footerLogo {
   border: 3px solid #E6FF94;
-  width: 200px;
-  height: 200px;
+  width: 10.5vw;
+  height: 10.5vw;
   border-radius: 50%;
   display: flex;
   flex-direction: column;
   gap: 0;
   position: relative;
+  margin-top: 2rem;
 }
 .container-main .container-footer #footerInfo #footerLogo .logoText p,
 .container-main .container-footer #footerInfo #footerLogo .logoText h2 {
@@ -674,8 +730,8 @@ body,
   border: 3px solid #E6FF94;
   position: absolute;
   border-radius: 50%;
-  width: 90px;
-  height: 90px;
+  width: 4.7vw;
+  height: 4.7vw;
   bottom: -2%;
   right: -21%;
 }/*# sourceMappingURL=main.css.map */

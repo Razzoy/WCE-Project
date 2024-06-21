@@ -111,23 +111,19 @@ body,
         }
     }
 
+#sectionCalc {
+    @include mx.pageFont(400, normal, var.$primaryFont);
+    @include mx.sectionColoring(var.$secondaryColor, var.$primaryFont);
+    @include mx.flexing(column, 1rem);
+    justify-content: center;
+    height: 940px;
+    position: relative;
 
-
-
-
-
-    #sectionCalc {
-        @include mx.pageFont(400, normal, var.$primaryFont);
-        @include mx.sectionColoring(var.$secondaryColor, var.$primaryFont);
-        @include mx.flexing(column, 1rem);
-        justify-content: center;
-        height: 940px;
-        position: relative;
-
-        span {
-            @include mx.sectionCircle(var.$secondaryColor, 7px solid var.$primaryColor);
-            @include mx.flexing(column, 0);
-            @extend %flexAbsoluteCenter;
+    #calcCircle {
+        @include mx.sectionCircle(var.$secondaryColor, 7px solid var.$primaryColor);
+        @include mx.sectionCircleHover(var.$infoFont, var.$primaryColor, 7px solid var.$secondaryColor);
+        @include mx.flexing(column, 0);
+        @extend %flexAbsoluteCenter;
 
             h2 {
                 @include mx.pageFont(400, normal, var.$secondaryFont);
@@ -195,7 +191,19 @@ body,
                     cursor: pointer
                 }
             }
+#sectionCheck {
+    @include mx.pageFont(400, normal, var.$primaryFont);
+    @include mx.sectionColoring(var.$primaryColor, var.$primaryFont);
+    @include mx.flexing(column, 1rem);
+    justify-content: center;
+    height: 940px;
+    position: relative;
 
+    #checkCircle {
+        @include mx.sectionCircle(var.$primaryColor, 7px solid var.$secondaryColor);
+        @include mx.sectionCircleHover(var.$infoFont, var.$secondaryColor, 7px solid var.$primaryColor);
+        @include mx.flexing(column, 0);
+        @extend %flexAbsoluteCenter;
         }
     }
 
@@ -217,7 +225,6 @@ body,
                 font-size: 24px;
             }
         }
-
         article {
             @include mx.flexing(column, 0);
             align-items: center;
@@ -233,22 +240,19 @@ body,
             p {
                 font-size: 20px;
                 @extend %noMarPad;
-            }
+        input {
+            @include mx.sectionColoring(var.$secondaryColor, var.$secondaryFont);
+            @include mx.pageFont(400, normal, var.$primaryColor);
+            border: none;
+            border-radius: 2rem;
+            font-size: 20px;
+            margin-top: 4rem;
+            width: 40rem;
+            padding: 1rem 2rem;
 
-            input {
-                @include mx.sectionColoring(var.$secondaryColor, var.$secondaryFont);
-                @include mx.pageFont(400, normal, var.$secondaryFont);
-                border: none;
-                border-radius: 2rem;
+            &::placeholder {
                 font-size: 20px;
-                margin-top: 4rem;
-                width: 45vw;
-                padding: 1rem 2rem;
-
-                &::placeholder {
-                    font-size: 20px;
-                    color: var.$primaryColor;
-                }
+                color: var.$primaryColorTransparent;
             }
 
             textarea:focus,
@@ -270,24 +274,20 @@ body,
                     cursor: pointer
                 }
             }
+#sectionResource {
+    @include mx.pageFont(400, normal, var.$secondaryFont);
+    @include mx.sectionColoring(var.$secondaryColor, var.$secondaryFont );
+    @include mx.flexing(column, 1rem);
+    justify-content: center;
+    height: 940px;
+    position: relative;
 
-        }
-    }
-
-    #sectionResource {
-        @include mx.pageFont(400, normal, var.$secondaryFont);
-        @include mx.sectionColoring(var.$secondaryColor, var.$secondaryFont );
-        @include mx.flexing(column, 1rem);
-        justify-content: center;
-        height: 940px;
-        position: relative;
-
-        span {
-            @include mx.sectionCircle(var.$secondaryColor, 7px solid var.$primaryColor);
-            @include mx.flexing(column, 0);
-            @extend %flexAbsoluteCenter;
-
-            h2 {
+    #resourceCircle {
+        @include mx.sectionCircle(var.$secondaryColor, 7px solid var.$primaryColor);
+        @include mx.sectionCircleHover(var.$infoFont, var.$primaryColor, 7px solid var.$secondaryColor);
+        @include mx.flexing(column, 0);
+        @extend %flexAbsoluteCenter;
+       h2 {
                 @include mx.pageFont(400, normal, var.$secondaryFont);
                 font-size: 24px;
             }
@@ -331,33 +331,30 @@ body,
             }
         }
 
-
-        #resourceCircle {
-            background-color: var.$secondaryColor;
-            border: 5px solid var.$primaryColor;
-            border-radius: 50%;
-            position: absolute;
-            top: 120px;
-            left: 60%;
-            width: 1000px;
-            height: 1000px;
-
-        }
+    #resourceCircleBig {
+        background-color: var.$secondaryColor;
+        border: 5px solid var.$primaryColor;
+        border-radius: 50%;
+        position: absolute;
+        top: 120px;
+        left: 60%;
+        width: 1000px;
+        height: 1000px;
     }
 
+#sectionMission {
+    @include mx.pageFont(400, normal, var.$primaryFont);
+    @include mx.sectionColoring(var.$primaryColor, var.$secondaryFont );
+    @include mx.flexing(column, 1rem);
+    justify-content: center;
+    height: 940px;
+    position: relative;
 
-    #sectionMission {
-        @include mx.pageFont(400, normal, var.$primaryFont);
-        @include mx.sectionColoring(var.$primaryColor, var.$secondaryFont );
-        @include mx.flexing(column, 1rem);
-        justify-content: center;
-        height: 940px;
-        position: relative;
-
-        span {
-            @include mx.sectionCircle(var.$primaryColor, 7px solid var.$secondaryColor);
-            @include mx.flexing(column, 0);
-            @extend %flexAbsoluteCenter;
+    #missionCircle {
+        @include mx.sectionCircle(var.$primaryColor, 7px solid var.$secondaryColor);
+        @include mx.sectionCircleHover(var.$infoFont, var.$secondaryColor, 7px solid var.$primaryColor);
+        @include mx.flexing(column, 0);
+        @extend %flexAbsoluteCenter;
 
             h2 {
                 @include mx.pageFont(400, normal, var.$secondaryColor);
@@ -411,11 +408,10 @@ body,
     .container-footer {
         @include mx.sectionColoring(var.$primaryColor, var.$infoFont);
         padding: 5rem;
-        @include mx.flexing(row, 0);
-        @extend %flexAbsoluteCenter;
 
         #footerInfo {
             @include mx.flexing(row, 2rem);
+          justify-content: space-evenly;
 
             ul {
                 @extend %noMarPad;
@@ -486,17 +482,18 @@ body,
                 margin-top: -1rem;
                 margin-bottom: 1rem;
             }
+          
+        #footerLogo {
+            border: 3px solid var.$primaryFont;
+            width: 10.5vw;
+            height: 10.5vw;
+            border-radius: 50%;
+            @include mx.flexing(column, 0);
+            @extend %flexAbsoluteCenter;
+            position: relative;
+            margin-top: 2rem;
 
-            #footerLogo {
-                border: 3px solid var.$primaryFont;
-                width: 200px;
-                height: 200px;
-                border-radius: 50%;
-                @include mx.flexing(column, 0);
-                @extend %flexAbsoluteCenter;
-                position: relative;
-
-                .logoText {
+          .logoText {
 
                     p,
                     h2 {
@@ -516,12 +513,12 @@ body,
                     border: 3px solid var.$primaryFont;
                     position: absolute;
                     border-radius: 50%;
-                    width: 90px;
-                    height: 90px;
+                            width: 4.7vw;
+                height: 4.7vw;
                     bottom: -2%;
                     right: -21%;
                 }
-            }
+          }
         }
 
 
