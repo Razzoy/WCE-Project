@@ -1,17 +1,145 @@
-@media only screen and (max-width: 600px) {
-    body {
-        #sectionCheck article input {
-            width: auto;
-        }
+@use "../helpers/_placeholders";
+@use "../helpers/_variables" as var;
+@use "../helpers/_mixins" as mx;
 
-        #sectionCalc article input {
-            width: auto;
-        }
-
-
-        #footerInfo {
-            ul:nth-child(-n+2) {
+@media only screen and (max-width: 1200px) {
+    .container-main {
+        #sectionResource {
+            #resourceCircle {
                 display: none;
+            }
+        }
+        #sectionMission{
+            #missionCircle1 {
+                display: none;
+            }
+
+            #missionCircle2 {
+                display: none;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 900px) {
+    body {
+
+
+        .container-main {
+            hgroup {
+                nav {
+                    ul {
+                        @include mx.flexing(row, 5px);
+                        padding: 0;
+                    }
+                }
+
+                header {
+                    .hero-container {
+                        #circle1 {
+                            width: 250px;
+                            height: 250px;
+
+                            h1 {
+                                font-size: 36px;
+                            }
+
+                            #circle2 {
+                                width: 150px;
+                                height: 150px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            #sectionCalc {
+                article {
+                    input {
+                        // width: auto;
+                    }
+                }
+            }
+
+
+            #sectionCheck {
+                article {
+                    input {
+                        // width: auto;
+                    }
+                }
+            }
+
+            #sectionResource {
+                article {
+                    padding: 0;
+
+                    h2 {
+                        font-size: 30px;
+                    }
+
+                    p {
+                        width: auto;
+                    }
+                }
+
+                #resourceCircle {
+                    display: none;
+                }
+            }
+
+            #sectionMission {
+                article {
+                    padding: 0;
+
+                    h2 {
+                        font-size: 30px;
+                    }
+
+                    p {
+                        width: auto;
+                    }
+                }
+
+
+                #missionCircle1 {
+                    display: none;
+                }
+
+                #missionCircle2 {
+                    display: none;
+                }
+            }
+
+            .container-footer {
+                #footerInfo {
+                    ul:nth-child(-n+2) {
+                        display: none;
+                    }
+
+                    #footerLogo {
+                        border: 3px solid #E6FF94;
+                        width: 7rem;
+                        height: 7rem;
+                        border-radius: 50%;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 0;
+                        position: relative;
+
+                        #footerCircle {
+                            background-color: #40A578;
+                            border: 3px solid #E6FF94;
+                            position: absolute;
+                            border-radius: 50%;
+                            width: 3rem;
+                            height: 3rem;
+                            bottom: -11%;
+                            right: 1rem;
+                        }
+                    }
+                }
             }
         }
     }
