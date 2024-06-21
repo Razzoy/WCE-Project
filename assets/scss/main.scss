@@ -71,13 +71,13 @@ hgroup {
 
             #circle1 {
                 position: relative;
-                width: 47.2vw;
-                height: 47.2vw;
+                width: 40vw;
+                height: 40vw;
 
                 h1 {
                     @include mx.pageFont(400, normal, var.$primaryFont);
                     @extend %noMarPad;
-                    font-size: 8.2vw;
+                    font-size: 6.5vw;
                     color: var.$primaryFont;
                     position: absolute;
                     left: -20%;
@@ -90,11 +90,11 @@ hgroup {
                     justify-content: center;
                     align-items: center;
                     position: absolute;
-                    right: -10%;
-                    bottom: 0%;
+                    right: -15%;
+                    bottom: -5%;
                     text-transform: uppercase;
-                    width: 20.8vw;
-                    height: 20.8vw;
+                    width: 18vw;
+                    height: 18vw;
 
                     h4 {
                         @include mx.pageFont(400, normal, var.$primaryFont);
@@ -224,13 +224,14 @@ hgroup {
         }
 
         p {
+            text-align: center;
             font-size: 20px;
             @extend %noMarPad;
         }
 
         input {
             @include mx.sectionColoring(var.$secondaryColor, var.$secondaryFont);
-            @include mx.pageFont(400, normal, var.$primaryColor);
+            @include mx.pageFont(400, normal, var.$secondaryFont);
             border: none;
             border-radius: 2rem;
             font-size: 20px;
@@ -240,7 +241,7 @@ hgroup {
 
             &::placeholder {
                 font-size: 20px;
-                color: var.$primaryColorTransparent;
+                color: var.$secondaryFontTransparent;
             }
         }
 
@@ -367,6 +368,9 @@ hgroup {
         }
 
         p {
+            br{
+                display: none;
+            }
             font-size: 20px;
             width: 520px;
             color: var.$infoFont;
@@ -410,24 +414,20 @@ hgroup {
         ul {
             @extend %noMarPad;
             margin-top: 2rem;
-
-            li,
-            h5,
-            p {
+            text-decoration: none;
+            list-style: none;
+            li, h5, p {
                 @include mx.pageFont(400, normal, var.$infoFont);
                 @extend %noMarPad;
                 font-size: 20px;
             }
-
-            text-decoration: none;
-            list-style: none;
-
             li {
-
                 h5 {
                     margin-bottom: 2rem;
                 }
-
+                span{
+                    display: none;
+                }
             }
 
             form {

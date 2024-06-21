@@ -48,3 +48,10 @@
         border: $border;
     }
 }
+
+@mixin sectionCircleQuery() {
+    width: 60px;
+    height: 60px;
+    top: -2.3rem;
+    left: 3vw;
+}
