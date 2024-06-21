@@ -468,6 +468,11 @@ hgroup header .hero-container #circle1 #circle2 h4 {
   font-style: normal;
   color: #006769;
 }
+#sectionCalc article #ipintensityResult {
+  display: flex;
+  font-size: 24px;
+  padding-top: 2rem;
+}
 #sectionCalc article input {
   background-color: #40A578;
   color: #A5DD9B;
@@ -577,6 +582,11 @@ hgroup header .hero-container #circle1 #circle2 h4 {
 #sectionCheck article p {
   text-align: center;
   font-size: 20px;
+}
+#sectionCheck article #greencheckResult {
+  display: flex;
+  font-size: 24px;
+  padding-top: 2rem;
 }
 #sectionCheck article input {
   background-color: #A5DD9B;

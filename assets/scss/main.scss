@@ -152,6 +152,11 @@ hgroup {
             @extend %noMarPad;
             @include mx.pageFont(400, normal, var.$secondaryFont);
         }
+        #ipintensityResult{
+            display: flex;
+            font-size: 24px;
+            padding-top: 2rem
+        }
 
         input {
             @include mx.sectionColoring(var.$primaryColor, var.$secondaryColor);
@@ -227,6 +232,11 @@ hgroup {
             text-align: center;
             font-size: 20px;
             @extend %noMarPad;
+        }
+        #greencheckResult{
+            display: flex;
+            font-size: 24px;
+            padding-top: 2rem
         }
 
         input {
