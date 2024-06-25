@@ -1,51 +1,307 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-
-body, #sectionCheck article h3, #sectionCheck article p, hgroup header .header-text h1, hgroup header .header-subtext h4 {
+body,
+#sectionCheck article h3,
+#sectionCheck article p, hgroup header .hero-container #circle1 h1, hgroup header .hero-container #circle1 #circle2 h4, #sectionCalc #calcCircle h2, #sectionCalc article h3, #sectionCalc article h4, #sectionCalc article p, #sectionCheck #checkCircle h2, #sectionResource #resourceCircle h2, #sectionResource article h2, #sectionResource article ul, #sectionMission #missionCircle h2, #sectionMission article h2, .container-footer #footerInfo ul, .container-footer #footerInfo ul li, .container-footer #footerInfo ul h5, .container-footer #footerInfo ul p, .container-footer #footerInfo #footerLogo .logoText p,
+.container-footer #footerInfo #footerLogo .logoText h2 {
   margin: 0;
   padding: 0;
 }
 
+#sectionCalc #calcCircle, #sectionCheck #checkCircle, #sectionResource #resourceCircle, #sectionMission #missionCircle, .container-footer #footerInfo #footerLogo {
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1200px) {
+  .container-main br {
+    display: none;
+  }
+  .container-main hgroup header {
+    height: 500px;
+  }
+  .container-main hgroup header br {
+    display: block;
+  }
+  .container-main hgroup header .hero-container {
+    margin-bottom: 50px;
+  }
+  .container-main hgroup header .hero-container #circle1 {
+    width: 300px;
+    height: 300px;
+  }
+  .container-main hgroup header .hero-container #circle1 h1 {
+    font-size: 36px;
+    left: 20%;
+    top: 18%;
+  }
+  .container-main hgroup header .hero-container #circle1 #circle2 {
+    width: 130px;
+    height: 130px;
+    bottom: -25%;
+    right: 0;
+  }
+  .container-main hgroup header .hero-container #circle1 #circle2 h4 {
+    font-size: 14px;
+  }
+  .container-main #sectionCalc, .container-main #sectionCheck, .container-main #sectionResource, .container-main #sectionMission {
+    height: 500px;
+  }
+  .container-main #sectionResource #resourceCircleBig {
+    display: none;
+  }
+  .container-main #sectionMission #missionCircle1 {
+    display: none;
+  }
+  .container-main #sectionMission #missionCircle2 {
+    display: none;
+  }
+}
+@media only screen and (max-width: 900px) {
+  body p {
+    font-size: 11px;
+  }
+  body .container-main hgroup nav {
+    height: 40px;
+  }
+  body .container-main hgroup nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    padding: 0;
+  }
+  body .container-main hgroup nav ul li a {
+    font-size: 10px;
+  }
+  body .container-main hgroup header .hero-container #circle1 h1 {
+    font-size: 36px;
+    left: 20%;
+    top: 18%;
+  }
+  body .container-main #sectionCalc {
+    padding: 3rem;
+    height: auto;
+    display: block;
+  }
+  body .container-main #sectionCalc #calcCircle {
+    width: 60px;
+    height: 60px;
+    top: -2.3rem;
+    left: 3vw;
+  }
+  body .container-main #sectionCalc #calcCircle h2 {
+    font-size: 10px;
+  }
+  body .container-main #sectionCalc article {
+    text-align: center;
+  }
+  body .container-main #sectionCalc article h3, body .container-main #sectionCalc article h4 {
+    font-size: 20px;
+    margin-bottom: 1.5rem;
+  }
+  body .container-main #sectionCalc article p {
+    font-size: 11px;
+  }
+  body .container-main #sectionCalc article input {
+    width: 250px;
+    margin-top: 2rem;
+    padding: 0.5rem 1rem;
+    font-size: 15px;
+  }
+  body .container-main #sectionCalc article input::-moz-placeholder {
+    text-align: center;
+    font-size: 15px;
+  }
+  body .container-main #sectionCalc article input::placeholder {
+    text-align: center;
+    font-size: 15px;
+  }
+  body .container-main #sectionCalc article button {
+    font-size: 13px;
+    padding: 0.2rem 0;
+    width: 7rem;
+  }
+  body .container-main #sectionCheck {
+    height: auto;
+    display: block;
+    padding: 3rem;
+    text-align: center;
+  }
+  body .container-main #sectionCheck #checkCircle {
+    width: 60px;
+    height: 60px;
+    top: -2.3rem;
+    left: 3vw;
+  }
+  body .container-main #sectionCheck #checkCircle h2 {
+    font-size: 10px;
+  }
+  body .container-main #sectionCheck article h3 {
+    font-size: 20px;
+    margin-bottom: 1.5rem;
+  }
+  body .container-main #sectionCheck article p {
+    font-size: 12px;
+    color: #FFF;
+  }
+  body .container-main #sectionCheck article p br {
+    display: none;
+  }
+  body .container-main #sectionCheck article input {
+    width: 250px;
+    margin-top: 2rem;
+    padding: 0.5rem 1rem;
+    font-size: 15px;
+  }
+  body .container-main #sectionCheck article input::-moz-placeholder {
+    text-align: center;
+    font-size: 15px;
+  }
+  body .container-main #sectionCheck article input::placeholder {
+    text-align: center;
+    font-size: 15px;
+  }
+  body .container-main #sectionCheck article button {
+    font-size: 13px;
+    padding: 0.2rem 0;
+    width: 7rem;
+  }
+  body .container-main #sectionResource {
+    height: auto;
+    display: block;
+    padding: 3rem 3rem;
+  }
+  body .container-main #sectionResource #resourceCircle {
+    width: 60px;
+    height: 60px;
+    top: -2.3rem;
+    left: 3vw;
+  }
+  body .container-main #sectionResource #resourceCircle h2 {
+    font-size: 10px;
+  }
+  body .container-main #sectionResource article {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  body .container-main #sectionResource article h2 {
+    font-size: 24px;
+  }
+  body .container-main #sectionResource article p {
+    font-size: 13px;
+    width: auto;
+  }
+  body .container-main #sectionResource article ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  body .container-main #sectionResource article ul li a {
+    font-size: 14px;
+  }
+  body .container-main #sectionMission {
+    height: auto;
+    display: block;
+    padding: 3rem;
+  }
+  body .container-main #sectionMission #missionCircle {
+    width: 60px;
+    height: 60px;
+    top: -2.3rem;
+    left: 3vw;
+  }
+  body .container-main #sectionMission #missionCircle h2 {
+    font-size: 10px;
+  }
+  body .container-main #sectionMission article {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0;
+  }
+  body .container-main #sectionMission article h2 {
+    font-size: 24px;
+  }
+  body .container-main #sectionMission article p {
+    width: auto;
+    font-size: 12px;
+  }
+  body .container-main #sectionMission article p br {
+    display: block;
+  }
+  body .container-main .container-footer {
+    padding: 0;
+    padding-bottom: 2rem;
+  }
+  body .container-main .container-footer #footerInfo {
+    padding-bottom: 5rem;
+    gap: 1vw;
+  }
+  body .container-main .container-footer #footerInfo ul:nth-child(-n+2) {
+    display: none;
+  }
+  body .container-main .container-footer #footerInfo ul {
+    margin-top: 4rem;
+  }
+  body .container-main .container-footer #footerInfo ul li {
+    font-size: 11px;
+  }
+  body .container-main .container-footer #footerInfo ul li h5 {
+    display: none;
+  }
+  body .container-main .container-footer #footerInfo ul li span, body .container-main .container-footer #footerInfo ul li br {
+    display: block;
+  }
+  body .container-main .container-footer #footerInfo ul form input {
+    padding: 0.2rem 0.4rem;
+  }
+  body .container-main .container-footer #footerInfo ul form #email {
+    width: 8rem;
+  }
+  body .container-main .container-footer #footerInfo ul form #submit {
+    padding: 0;
+    width: 3.5rem;
+  }
+  body .container-main .container-footer #footerInfo #footerLogo {
+    border: 3px solid #E6FF94;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    position: relative;
+  }
+  body .container-main .container-footer #footerInfo #footerLogo .logoText h2 {
+    font-size: 30px;
+  }
+  body .container-main .container-footer #footerInfo #footerLogo .logoText p {
+    margin-top: -0.5rem;
+  }
+  body .container-main .container-footer #footerInfo #footerLogo #footerCircle {
+    background-color: #40A578;
+    border: 3px solid #E6FF94;
+    position: absolute;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    bottom: -13%;
+    right: -1%;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+#sectionCheck article h3,
+#sectionCheck article p {
+  overflow-x: hidden;
+}
+
 hgroup {
   background-color: #40A578;
-}
-hgroup header {
-  display: flex;
-  width: 100%;
-  height: 1058px;
-  position: relative;
-}
-hgroup header .header-text {
-  display: flex;
-  flex-direction: column;
-  color: #E6FF94;
-  position: absolute;
-  top: 276px;
-  left: 186px;
-  height: 500px;
-  width: 592px;
-}
-hgroup header .header-text h1 {
-  font-family: "Ubuntu Mono", monospace;
-  font-weight: 400;
-  font-style: normal;
-  color: #E6FF94;
-  font-size: 128px;
-}
-hgroup header .header-subtext {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 886px;
-  left: 921px;
-  height: 89px;
-  width: 239px;
-}
-hgroup header .header-subtext h4 {
-  font-family: "Ubuntu Mono", monospace;
-  font-weight: 400;
-  font-style: normal;
-  color: #E6FF94;
-  font-size: 24px;
 }
 hgroup nav {
   background-color: #A5DD9B;
@@ -80,17 +336,188 @@ hgroup nav ul li a {
 hgroup nav ul li a:hover {
   color: #FFF;
 }
-hgroup span {
-  padding: 5vw;
+hgroup header {
+  height: 940px;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+hgroup header .hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+hgroup header .hero-container span {
   background-color: #40A578;
-  border: 2px solid #E6FF94;
+  border: 4px solid #E6FF94;
   border-radius: 50%;
 }
-hgroup span #circle1 {
-  position: absolute;
-  width: 760px;
-  height: 760px;
+hgroup header .hero-container #circle1 {
+  position: relative;
+  width: 40vw;
+  height: 40vw;
 }
+hgroup header .hero-container #circle1 h1 {
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  color: #E6FF94;
+  font-size: 6.5vw;
+  color: #E6FF94;
+  position: absolute;
+  left: -20%;
+  top: -6%;
+  z-index: 5;
+}
+hgroup header .hero-container #circle1 #circle2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: -15%;
+  bottom: -5%;
+  text-transform: uppercase;
+  width: 18vw;
+  height: 18vw;
+}
+hgroup header .hero-container #circle1 #circle2 h4 {
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  color: #E6FF94;
+  font-size: 1.5vw;
+  text-align: center;
+}
+
+#sectionCalc {
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  color: #E6FF94;
+  background-color: #A5DD9B;
+  color: #E6FF94;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  height: 940px;
+  position: relative;
+}
+#sectionCalc #calcCircle {
+  background-color: #A5DD9B;
+  border: 7px solid #40A578;
+  width: 12.5vw;
+  height: 12.5vw;
+  border-radius: 50%;
+  position: absolute;
+  top: -12vh;
+  left: 5vw;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+#sectionCalc #calcCircle h2 {
+  text-align: center;
+}
+#sectionCalc #calcCircle:hover {
+  cursor: pointer;
+  background-color: #40A578;
+  border: 7px solid #A5DD9B;
+}
+#sectionCalc #calcCircle:hover h2 {
+  color: #FFF;
+}
+#sectionCalc #calcCircle h2 {
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  color: #006769;
+  font-size: 24px;
+}
+#sectionCalc article {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  align-items: center;
+  position: relative;
+}
+#sectionCalc article h3 {
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  color: #40A578;
+  margin-bottom: 3rem;
+  font-size: 48px;
+}
+#sectionCalc article h4 {
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  color: #006769;
+  margin-bottom: 3rem;
+  font-size: 36px;
+}
+#sectionCalc article p {
+  font-size: 20px;
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  color: #006769;
+}
+#sectionCalc article #ipintensityResult {
+  display: flex;
+  font-size: 24px;
+  padding-top: 2rem;
+}
+#sectionCalc article input {
+  background-color: #40A578;
+  color: #A5DD9B;
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  color: #FFF;
+  border: none;
+  border-radius: 2rem;
+  font-size: 20px;
+  margin-top: 4rem;
+  width: 45vw;
+  padding: 1rem 2rem;
+}
+#sectionCalc article input::-moz-placeholder {
+  font-size: 20px;
+  color: #FFF;
+}
+#sectionCalc article input::placeholder {
+  font-size: 20px;
+  color: #FFF;
+}
+#sectionCalc article textarea:focus,
+#sectionCalc article input:focus {
+  outline: none;
+}
+#sectionCalc article button {
+  background-color: #40A578;
+  color: #006769;
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  color: #FFF;
+  margin-top: 2rem;
+  border: none;
+  border-radius: 2rem;
+  width: 12rem;
+  padding: 0.5rem 2rem;
+}
+#sectionCalc article button:hover {
+  background-color: #006769;
+  color: #E6FF94;
+  cursor: pointer;
+}
+
 #sectionCheck {
   font-family: "Ubuntu Mono", monospace;
   font-weight: 400;
@@ -102,13 +529,47 @@ hgroup span #circle1 {
   flex-direction: column;
   gap: 1rem;
   justify-content: center;
-  height: 1440px;
+  height: 940px;
+  position: relative;
+}
+#sectionCheck #checkCircle {
+  background-color: #40A578;
+  border: 7px solid #A5DD9B;
+  width: 12.5vw;
+  height: 12.5vw;
+  border-radius: 50%;
+  position: absolute;
+  top: -12vh;
+  left: 5vw;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+#sectionCheck #checkCircle h2 {
+  text-align: center;
+}
+#sectionCheck #checkCircle:hover {
+  cursor: pointer;
+  background-color: #A5DD9B;
+  border: 7px solid #40A578;
+}
+#sectionCheck #checkCircle:hover h2 {
+  color: #FFF;
+}
+#sectionCheck #checkCircle h2 {
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  color: #A5DD9B;
+  font-size: 24px;
 }
 #sectionCheck article {
   display: flex;
   flex-direction: column;
   gap: 0;
   align-items: center;
+  position: relative;
 }
 #sectionCheck article h3 {
   font-family: "Ubuntu Mono", monospace;
@@ -119,7 +580,13 @@ hgroup span #circle1 {
   font-size: 36px;
 }
 #sectionCheck article p {
+  text-align: center;
   font-size: 20px;
+}
+#sectionCheck article #greencheckResult {
+  display: flex;
+  font-size: 24px;
+  padding-top: 2rem;
 }
 #sectionCheck article input {
   background-color: #A5DD9B;
@@ -137,11 +604,11 @@ hgroup span #circle1 {
 }
 #sectionCheck article input::-moz-placeholder {
   font-size: 20px;
-  color: #40A578;
+  color: rgba(0, 103, 105, 0.6666666667);
 }
 #sectionCheck article input::placeholder {
   font-size: 20px;
-  color: #40A578;
+  color: rgba(0, 103, 105, 0.6666666667);
 }
 #sectionCheck article textarea:focus,
 #sectionCheck article input:focus {
@@ -159,4 +626,301 @@ hgroup span #circle1 {
   border-radius: 2rem;
   width: 12rem;
   padding: 0.5rem 2rem;
+}
+#sectionCheck article button:hover {
+  background-color: #006769;
+  color: #E6FF94;
+  cursor: pointer;
+}
+
+#sectionResource {
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  color: #006769;
+  background-color: #A5DD9B;
+  color: #006769;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  height: 940px;
+  position: relative;
+}
+#sectionResource #resourceCircle {
+  background-color: #A5DD9B;
+  border: 7px solid #40A578;
+  width: 12.5vw;
+  height: 12.5vw;
+  border-radius: 50%;
+  position: absolute;
+  top: -12vh;
+  left: 5vw;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+#sectionResource #resourceCircle h2 {
+  text-align: center;
+}
+#sectionResource #resourceCircle:hover {
+  cursor: pointer;
+  background-color: #40A578;
+  border: 7px solid #A5DD9B;
+}
+#sectionResource #resourceCircle:hover h2 {
+  color: #FFF;
+}
+#sectionResource #resourceCircle h2 {
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  color: #006769;
+  font-size: 24px;
+}
+#sectionResource article {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding-left: 12rem;
+}
+#sectionResource article h2 {
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  color: #006769;
+  font-size: 64px;
+}
+#sectionResource article p {
+  font-size: 20px;
+  width: 420px;
+}
+#sectionResource article ul {
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+#sectionResource article ul li:hover {
+  color: #FFF;
+}
+#sectionResource article ul li a {
+  font-size: 20px;
+  color: #006769;
+}
+#sectionResource article ul li a:hover {
+  color: #FFF;
+}
+#sectionResource #resourceCircleBig {
+  background-color: #A5DD9B;
+  border: 5px solid #40A578;
+  border-radius: 50%;
+  position: absolute;
+  top: 120px;
+  left: 60%;
+  width: 1000px;
+  height: 1000px;
+}
+
+#sectionMission {
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  color: #E6FF94;
+  background-color: #40A578;
+  color: #006769;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  height: 940px;
+  position: relative;
+}
+#sectionMission #missionCircle {
+  background-color: #40A578;
+  border: 7px solid #A5DD9B;
+  width: 12.5vw;
+  height: 12.5vw;
+  border-radius: 50%;
+  position: absolute;
+  top: -12vh;
+  left: 5vw;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+#sectionMission #missionCircle h2 {
+  text-align: center;
+}
+#sectionMission #missionCircle:hover {
+  cursor: pointer;
+  background-color: #A5DD9B;
+  border: 7px solid #40A578;
+}
+#sectionMission #missionCircle:hover h2 {
+  color: #FFF;
+}
+#sectionMission #missionCircle h2 {
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  color: #A5DD9B;
+  font-size: 24px;
+}
+#sectionMission article {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding-left: 12rem;
+}
+#sectionMission article h2 {
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  color: #E6FF94;
+  font-size: 64px;
+}
+#sectionMission article p {
+  font-size: 20px;
+  width: 520px;
+  color: #FFF;
+}
+#sectionMission article p br {
+  display: none;
+}
+#sectionMission #missionCircle1 {
+  background-color: #40A578;
+  border: 5px solid #E6FF94;
+  border-radius: 50%;
+  position: absolute;
+  top: 120px;
+  left: 70%;
+  width: 700px;
+  height: 700px;
+  overflow: hidden;
+}
+#sectionMission #missionCircle2 {
+  background-color: #40A578;
+  border: 5px solid #E6FF94;
+  border-radius: 50%;
+  position: absolute;
+  top: 500px;
+  left: 60%;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.container-footer {
+  background-color: #40A578;
+  color: #FFF;
+  padding: 5rem;
+}
+.container-footer #footerInfo {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: space-evenly;
+}
+.container-footer #footerInfo ul {
+  margin-top: 2rem;
+  text-decoration: none;
+  list-style: none;
+}
+.container-footer #footerInfo ul li, .container-footer #footerInfo ul h5, .container-footer #footerInfo ul p {
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  color: #FFF;
+  font-size: 20px;
+}
+.container-footer #footerInfo ul li h5 {
+  margin-bottom: 2rem;
+}
+.container-footer #footerInfo ul li span {
+  display: none;
+}
+.container-footer #footerInfo ul form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.container-footer #footerInfo ul form input {
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  color: #006769;
+  border: none;
+  border-radius: 2rem;
+  padding: 0.4rem 1rem;
+}
+.container-footer #footerInfo ul form textarea:focus,
+.container-footer #footerInfo ul form input:focus {
+  outline: none;
+}
+.container-footer #footerInfo ul form #email {
+  background-color: #E6FF94;
+  color: #40A578;
+  width: 12rem;
+}
+.container-footer #footerInfo ul form #email::-moz-placeholder {
+  color: #40A578;
+}
+.container-footer #footerInfo ul form #email::placeholder {
+  color: #40A578;
+}
+.container-footer #footerInfo ul form #submit {
+  background-color: #40A578;
+  color: #E6FF94;
+  border: 1px solid #E6FF94;
+  width: 5rem;
+}
+.container-footer #footerInfo ul form #submit:hover {
+  color: #FFF;
+  cursor: pointer;
+}
+.container-footer #footerInfo ul:nth-child(2) li:nth-child(2) {
+  margin-bottom: 2rem;
+}
+.container-footer #footerInfo ul:nth-child(3) li:nth-child(2) {
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+}
+.container-footer #footerInfo #footerLogo {
+  border: 3px solid #E6FF94;
+  width: 10.5vw;
+  height: 10.5vw;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  position: relative;
+  margin-top: 2rem;
+}
+.container-footer #footerInfo #footerLogo .logoText p,
+.container-footer #footerInfo #footerLogo .logoText h2 {
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  color: #FFF;
+  font-size: 20px;
+}
+.container-footer #footerInfo #footerLogo .logoText h2 {
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  color: #E6FF94;
+  font-size: 64px;
+}
+.container-footer #footerInfo #footerLogo #footerCircle {
+  background-color: #40A578;
+  border: 3px solid #E6FF94;
+  position: absolute;
+  border-radius: 50%;
+  width: 4.7vw;
+  height: 4.7vw;
+  bottom: -2%;
+  right: -21%;
 }/*# sourceMappingURL=main.css.map */

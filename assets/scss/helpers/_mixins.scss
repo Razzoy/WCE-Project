@@ -1,11 +1,11 @@
-@mixin pageFont($weight, $style, $color){
+@mixin pageFont($weight, $style, $color) {
     font-family: "Ubuntu Mono", monospace;
     font-weight: $weight;
     font-style: $style;
     color: $color;
 }
 
-@mixin flexing($direction, $gap){
+@mixin flexing($direction, $gap) {
     display: flex;
     flex-direction: $direction;
     gap: $gap;
@@ -17,7 +17,41 @@
     gap: $gap;
 }
 
-@mixin sectionColoring($background, $color){
+@mixin sectionColoring($background, $color) {
     background-color: $background;
     color: $color;
+}
+
+@mixin sectionCircle($background, $border) {
+    background-color: $background;
+    border: $border;
+    width: 12.5vw;
+    height: 12.5vw;
+    border-radius: 50%;
+    position: absolute;
+    top: -12vh;
+    left: 5vw;
+    z-index: 5;
+    h2{
+        @extend %noMarPad;
+        text-align: center;
+    }
+}
+
+@mixin sectionCircleHover($color, $background, $border) {
+    &:hover {
+        h2{
+            color: $color;
+        }
+        cursor: pointer;
+        background-color: $background;
+        border: $border;
+    }
+}
+
+@mixin sectionCircleQuery() {
+    width: 60px;
+    height: 60px;
+    top: -2.3rem;
+    left: 3vw;
 }
